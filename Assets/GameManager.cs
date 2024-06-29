@@ -34,16 +34,31 @@ public class GameManager : MonoBehaviour
 			{
 				moleHitStatus[holeAnimator] = false; // Reset hit status
 				holeAnimator.SetTrigger("spawn");
-				Debug.Log(selectedHole.name + " spawned");
 
 				yield return new WaitForSeconds(moleLifetime);
 
-				holeAnimator.SetTrigger("despawn");
+				if (!moleHitStatus[holeAnimator]) // Vérifie si la taupe n'a pas été frappée
+				{
+					holeAnimator.SetTrigger("despawn");
+					StartCoroutine(CheckDespawn(holeAnimator, selectedHole));
+				}
 			}
 		}
 	}
 
-	// Start is called before the first frame update
+	// Coroutine pour vérifier si la taupe a atteint l'état "Empty"
+	IEnumerator CheckDespawn(Animator animator, GameObject hole)
+	{
+		// Attendre que l'animation de despawn soit terminée
+		yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Empty"));
+
+		if (!moleHitStatus[animator]) // Vérifie si la taupe n'a toujours pas été frappée
+		{
+			LoseLife();
+		}
+	}
+
+	// Start is called avant la première frame update
 	void Start()
 	{
 		mainCamera = Camera.main; // Assure-toi que la caméra principale est bien tagguée comme "MainCamera"
@@ -51,10 +66,6 @@ public class GameManager : MonoBehaviour
 		for (int i = 0; i < holes.Length; i++)
 		{
 			holes[i] = GameObject.Find("Hole" + (i + 1));
-			if (holes[i] == null)
-			{
-				Debug.LogError("Hole" + (i + 1) + " not found!");
-			}
 		}
 
 		hearts = new GameObject[3];
@@ -78,7 +89,7 @@ public class GameManager : MonoBehaviour
 		StartCoroutine(SpawnMoles());
 	}
 
-	// Update is called once per frame
+	// Update est appelée une fois par frame
 	void Update()
 	{
 		if (Input.GetMouseButtonDown(0))
@@ -91,9 +102,6 @@ public class GameManager : MonoBehaviour
 		{
 			CheckHit(Input.GetTouch(0).position);
 		}
-
-		// Vérifier les transitions des animators
-		CheckAnimatorTransitions();
 	}
 
 	void CheckHit(Vector2 screenPosition)
@@ -119,9 +127,6 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
-		else
-		{
-		}
 	}
 
 	void TriggerHitAnimation(GameObject hole)
@@ -129,38 +134,12 @@ public class GameManager : MonoBehaviour
 		Animator animator = hole.GetComponent<Animator>();
 		if (animator != null)
 		{
-			Debug.Log(hole.name + " - Animator found and hit trigger set");
 			animator.SetTrigger("hit");
 
 			moleHitStatus[animator] = true; // Marque la taupe comme frappée
 
 			score += baseScore;
 			UpdateScore();
-		}
-		else
-		{
-		}
-	}
-
-	void CheckAnimatorTransitions()
-	{
-		foreach (var hole in holes)
-		{
-			Animator animator = hole.GetComponent<Animator>();
-			if (animator != null)
-			{
-				AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
-				if (currentState.IsName("Empty"))
-				{
-				
-					AnimatorTransitionInfo transitionInfo = animator.GetAnimatorTransitionInfo(0);
-					if (transitionInfo.IsName("Despawn -> Empty") && !moleHitStatus[animator])
-					{
-						Debug.Log("Je passe de despawn à empty " + hole);
-						LoseLife();
-					}
-				}
-			}
 		}
 	}
 
@@ -184,7 +163,6 @@ public class GameManager : MonoBehaviour
 
 			if (lives == 0)
 			{
-				Debug.Log("Game Over!");
 				// Ajoutez ici la logique de fin de jeu
 			}
 		}
