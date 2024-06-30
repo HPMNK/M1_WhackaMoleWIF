@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/WhackMoleGame.unity
+    guid: 05c39bcd3b9480648a4d68c53de72a0e
+  - enabled: 1
+    path: Assets/GameOverScene.unity
+    guid: f46266dcb18bf4842a74f0c1f32760b5
   m_configObjects: {}

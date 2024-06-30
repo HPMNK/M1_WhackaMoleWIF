@@ -5,7 +5,6 @@ using TMPro;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 
-
 public class GameManager : MonoBehaviour
 {
 	private GameObject[] holes = new GameObject[10]; // Crée un tableau de 10 GameObjects
@@ -33,9 +32,9 @@ public class GameManager : MonoBehaviour
 	private GameObject heartContainer; // Container pour les cœurs
 
 	private int activeMoles = 0; // Nombre de taupes actives
-	private int maxActiveMoles = 1; // Nombre maximal de taupes actives au début du jeu
+	private int maxActiveMoles = 2; // Nombre maximal de taupes actives au début du jeu
 
-	private Dictionary<Animator, bool> moleHitStatus = new Dictionary<Animator, bool>(); // Pour suivre l'état de chaque taupe
+	bool isPaused = false;
 
 	void Awake()
 	{
@@ -66,61 +65,15 @@ public class GameManager : MonoBehaviour
 			heart.name = "Heart" + (lives - i);
 			hearts[i] = heart;
 		}
+
+		Mole.OnLoseLife += LoseLife;
 	}
 
-	IEnumerator SpawnMoles()
+	void OnDestroy()
 	{
-		while (true)
-		{
-			yield return new WaitForSeconds(Random.Range(spawnIntervalMin, spawnIntervalMax));
-
-			if (activeMoles < maxActiveMoles)
-			{
-				int randomHoleIndex = Random.Range(0, holes.Length);
-				GameObject selectedHole = holes[randomHoleIndex];
-
-				Animator holeAnimator = selectedHole.GetComponent<Animator>();
-				if (holeAnimator != null)
-				{
-					activeMoles++; // Augmente le nombre de taupes actives
-					moleHitStatus[holeAnimator] = false; // Reset hit status
-					holeAnimator.SetTrigger("spawn");
-					holeAnimator.speed = Mathf.Min(1 + molesHit * 0.05f, maxAnimationSpeed); // Augmenter la vitesse de l'animation
-
-					StartCoroutine(HandleMoleLifeCycle(holeAnimator, selectedHole));
-				}
-			}
-		}
+		Mole.OnLoseLife -= LoseLife;
 	}
 
-	IEnumerator HandleMoleLifeCycle(Animator holeAnimator, GameObject hole)
-	{
-		yield return new WaitForSeconds(moleLifetime);
-
-		if (!moleHitStatus[holeAnimator]) // Vérifie si la taupe n'a pas été frappée
-		{
-			holeAnimator.SetTrigger("despawn");
-			StartCoroutine(CheckDespawn(holeAnimator, hole));
-		}
-		else
-		{
-			activeMoles--; // Diminue le nombre de taupes actives si la taupe est frappée
-		}
-	}
-
-	IEnumerator CheckDespawn(Animator animator, GameObject hole)
-	{
-		// Attendre que l'animation de despawn soit terminée
-		yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Empty"));
-
-		if (!moleHitStatus[animator]) // Vérifie si la taupe n'a toujours pas été frappée
-		{
-			LoseLife();
-		}
-		activeMoles--; // Diminue le nombre de taupes actives
-	}
-
-	// Start est appelée avant la première frame update
 	void Start()
 	{
 		mainCamera = Camera.main; // Assure-toi que la caméra principale est bien tagguée comme "MainCamera"
@@ -141,7 +94,42 @@ public class GameManager : MonoBehaviour
 		StartCoroutine(SpawnMoles());
 	}
 
-	// Update est appelée une fois par frame
+	IEnumerator SpawnMoles()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(Random.Range(spawnIntervalMin, spawnIntervalMax));
+
+			if (activeMoles < maxActiveMoles)
+			{
+				int randomHoleIndex = Random.Range(0, holes.Length);
+				GameObject selectedHole = holes[randomHoleIndex];
+
+				Mole mole = selectedHole.GetComponent<Mole>();
+				if (mole != null && mole.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
+				{
+					activeMoles++; // Augmente le nombre de taupes actives
+					mole.Spawn();
+					StartCoroutine(HandleMoleLifeCycle(mole));
+				}
+			}
+		}
+	}
+
+	IEnumerator HandleMoleLifeCycle(Mole mole)
+	{
+		yield return new WaitForSeconds(moleLifetime);
+
+		if (!mole.IsHit) // Vérifie si la taupe n'a pas été frappée
+		{
+			mole.Despawn();
+		}
+
+		yield return new WaitUntil(() => mole.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"));
+
+		activeMoles--; // Diminue le nombre de taupes actives après la fin du cycle de vie
+	}
+
 	void Update()
 	{
 		if (Input.GetMouseButtonDown(0))
@@ -154,18 +142,22 @@ public class GameManager : MonoBehaviour
 		{
 			CheckHit(Input.GetTouch(0).position);
 		}
+
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			isPaused = !isPaused; // Inverse l'état de la pause
+			Time.timeScale = isPaused ? 0 : 1; // Met le timeScale à 0 quand c'est en pause
+		}
 	}
 
 	void CheckHit(Vector2 screenPosition)
 	{
-		RaycastHit2D hit;
-		Ray ray = mainCamera.ScreenPointToRay(screenPosition);
+		Vector2 worldPoint = mainCamera.ScreenToWorldPoint(screenPosition);
+		Collider2D hitCollider = Physics2D.OverlapPoint(worldPoint);
 
-		hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
-
-		if (hit.collider != null)
+		if (hitCollider != null)
 		{
-			GameObject clickedGameObject = hit.collider.gameObject;
+			GameObject clickedGameObject = hitCollider.gameObject;
 
 			if (clickedGameObject != null)
 			{
@@ -183,12 +175,10 @@ public class GameManager : MonoBehaviour
 
 	void TriggerHitAnimation(GameObject hole)
 	{
-		Animator animator = hole.GetComponent<Animator>();
-		if (animator != null)
+		Mole mole = hole.GetComponent<Mole>();
+		if (mole != null && !mole.IsHit)
 		{
-			animator.SetTrigger("hit");
-
-			moleHitStatus[animator] = true; // Marque la taupe comme frappée
+			mole.Hit();
 
 			molesHit++;
 			AdjustDifficulty();
@@ -202,7 +192,7 @@ public class GameManager : MonoBehaviour
 	{
 		if (scoreText != null)
 		{
-			scoreText.text = score.ToString(); 
+			scoreText.text = score.ToString();
 		}
 	}
 
@@ -233,10 +223,7 @@ public class GameManager : MonoBehaviour
 
 			if (lives == 0)
 			{
-				Debug.Log("Game Over!");
 				SceneManager.LoadScene("GameOverScene"); // Charger la scène "GameOver"
-
-				// Ajoutez ici la logique de fin de jeu
 			}
 		}
 	}
@@ -256,10 +243,10 @@ public class GameManager : MonoBehaviour
 		// Mettre à jour la vitesse de l'animation pour chaque taupe
 		foreach (var hole in holes)
 		{
-			Animator holeAnimator = hole.GetComponent<Animator>();
-			if (holeAnimator != null)
+			Mole mole = hole.GetComponent<Mole>();
+			if (mole != null)
 			{
-				holeAnimator.speed = Mathf.Min(1 + molesHit * 0.002f, maxAnimationSpeed);
+				mole.GetComponent<Animator>().speed = Mathf.Min(1 + molesHit * 0.005f, maxAnimationSpeed);
 			}
 		}
 	}

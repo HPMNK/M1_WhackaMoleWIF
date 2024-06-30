@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2221732031678868903, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f1848f05bffb9c042a76c6ab00aab9d2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1092,7 +1096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 733}
+  m_AnchoredPosition: {x: 0, y: 839}
   m_SizeDelta: {x: 1284, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1651693900
@@ -1269,14 +1273,14 @@ RectTransform:
   m_GameObject: {fileID: 1925031592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2475, y: 1.2475, z: 1.2475}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 522429226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 980}
+  m_AnchoredPosition: {x: 26, y: 1105}
   m_SizeDelta: {x: 678.0139, y: 154.3698}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925031594
@@ -1548,10 +1552,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb61b56aa2462a4dbe87d23c1bb8ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moleLifetime: 2
-  difficultyIncreaseRate: 0.1
+  initialMoleLifetime: 2
+  initialSpawnIntervalMin: 0.5
+  initialSpawnIntervalMax: 1
   minMoleLifetime: 0.5
+  minSpawnInterval: 0.3
+  maxAnimationSpeed: 2
   baseScore: 10
+  maxScorePerMole: 100
   lives: 3
   heartPrefab: {fileID: 7950821974219357160, guid: 9e5769365a5ee2b40a681ed2ea25f1c8, type: 3}
   uiCanvas: {fileID: 522429226}
