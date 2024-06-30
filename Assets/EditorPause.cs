@@ -1,5 +1,7 @@
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
 
 public class EditorPause : EditorWindow
 {
@@ -32,3 +34,4 @@ public class EditorPause : EditorWindow
 		Debug.Log("Editor resumed");
 	}
 }
+#endif
