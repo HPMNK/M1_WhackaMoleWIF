@@ -76,6 +76,9 @@ public class GameManager : MonoBehaviour
 
 	void Start()
 	{
+		PlayerPrefs.SetInt("FinalScore", 0);
+		PlayerPrefs.Save();
+
 		mainCamera = Camera.main; // Assure-toi que la caméra principale est bien tagguée comme "MainCamera"
 
 		for (int i = 0; i < holes.Length; i++)
@@ -223,6 +226,8 @@ public class GameManager : MonoBehaviour
 
 			if (lives == 0)
 			{
+				PlayerPrefs.SetInt("FinalScore", score);
+				PlayerPrefs.Save();
 				SceneManager.LoadScene("GameOverScene"); // Charger la scène "GameOver"
 			}
 		}
