@@ -2,38 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
 	private GameObject[] holes = new GameObject[10]; // Crée un tableau de 10 GameObjects
 	private Camera mainCamera; // Référence à la caméra principale
 
-	public float moleLifetime = 2.0f; // Durée de vie initiale des taupes en secondes
-	public float difficultyIncreaseRate = 0.1f; // Réduction de la durée de vie par cycle en secondes
+	public float initialMoleLifetime = 2.0f; // Durée de vie initiale des taupes en secondes
+	public float initialSpawnIntervalMin = 0.5f;
+	public float initialSpawnIntervalMax = 1.5f;
 	public float minMoleLifetime = 0.5f; // Durée de vie minimale des taupes
+	public float minSpawnInterval = 0.1f;
+	public float maxAnimationSpeed = 3.0f; // Vitesse maximale des animations
 	public int baseScore = 10; // Score de base pour chaque taupe frappée
+	public int maxScorePerMole = 100; // Score maximal par taupe
 	public int lives = 3; // Nombre initial de vies
 	public GameObject heartPrefab; // Prefab du cœur
+	public RectTransform uiCanvas; // Référence au canvas UI
 
 	private int score = 0; // Score actuel
+	private int molesHit = 0; // Nombre de taupes frappées
+	private float moleLifetime; // Durée de vie actuelle des taupes en secondes
+	private float spawnIntervalMin;
+	private float spawnIntervalMax;
 	private GameObject[] hearts; // Tableaux des GameObjects représentant les cœurs
 	private TextMeshProUGUI scoreText; // Référence au TextMeshPro pour le score
-	private GameObject lifeContainer; // Container pour les cœurs
+	private GameObject heartContainer; // Container pour les cœurs
 
 	private Dictionary<Animator, bool> moleHitStatus = new Dictionary<Animator, bool>(); // Pour suivre l'état de chaque taupe
 
 	void Awake()
 	{
-		// Trouver le LifeContainer
-		lifeContainer = GameObject.Find("HeartContainer");
-		if (lifeContainer == null)
+		// Initialiser les valeurs dynamiques
+		moleLifetime = initialMoleLifetime;
+		spawnIntervalMin = initialSpawnIntervalMin;
+		spawnIntervalMax = initialSpawnIntervalMax;
+
+		// Trouver le HeartContainer
+		heartContainer = GameObject.Find("HeartContainer");
+		if (heartContainer == null)
 		{
 			Debug.LogError("HeartContainer not found!");
 			return;
 		}
 
 		// Détruire les enfants du container de vies
-		foreach (Transform child in lifeContainer.transform)
+		foreach (Transform child in heartContainer.transform)
 		{
 			Destroy(child.gameObject);
 		}
@@ -42,7 +59,7 @@ public class GameManager : MonoBehaviour
 		hearts = new GameObject[lives];
 		for (int i = lives - 1; i >= 0; i--)
 		{
-			GameObject heart = Instantiate(heartPrefab, lifeContainer.transform);
+			GameObject heart = Instantiate(heartPrefab, heartContainer.transform);
 			heart.name = "Heart" + (lives - i);
 			hearts[i] = heart;
 		}
@@ -52,7 +69,7 @@ public class GameManager : MonoBehaviour
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
+			yield return new WaitForSeconds(Random.Range(spawnIntervalMin, spawnIntervalMax));
 
 			int randomHoleIndex = Random.Range(0, holes.Length);
 			GameObject selectedHole = holes[randomHoleIndex];
@@ -62,6 +79,7 @@ public class GameManager : MonoBehaviour
 			{
 				moleHitStatus[holeAnimator] = false; // Reset hit status
 				holeAnimator.SetTrigger("spawn");
+				holeAnimator.speed = Mathf.Min(1 + molesHit * 0.05f, maxAnimationSpeed); // Augmenter la vitesse de l'animation
 
 				yield return new WaitForSeconds(moleLifetime);
 
@@ -156,7 +174,10 @@ public class GameManager : MonoBehaviour
 
 			moleHitStatus[animator] = true; // Marque la taupe comme frappée
 
-			score += baseScore;
+			molesHit++;
+			AdjustDifficulty();
+
+			score += CalculateScore();
 			UpdateScore();
 		}
 	}
@@ -165,7 +186,7 @@ public class GameManager : MonoBehaviour
 	{
 		if (scoreText != null)
 		{
-			scoreText.text = score.ToString();
+			scoreText.text = score.ToString(); 
 		}
 	}
 
@@ -178,13 +199,55 @@ public class GameManager : MonoBehaviour
 			if (heartAnimator != null)
 			{
 				heartAnimator.SetBool("isEmpty", true);
+
+				// Ajout de l'effet de shake screen pour le cœur
+				RectTransform heartRect = hearts[lives].GetComponent<RectTransform>();
+				if (heartRect != null)
+				{
+					heartRect.DOShakeAnchorPos(0.2f, 1f, 10, 90, false, true);
+				}
+			}
+
+			// Ajout de l'effet de shake screen pour la caméra et l'UI
+			mainCamera.transform.DOShakePosition(0.2f, 1f, 10, 90, false, true);
+			if (uiCanvas != null)
+			{
+				uiCanvas.DOShakeAnchorPos(0.2f, 1f, 10, 90, false, true);
 			}
 
 			if (lives == 0)
 			{
 				Debug.Log("Game Over!");
+				SceneManager.LoadScene("GameOverScene"); // Charger la scène "GameOver"
+
 				// Ajoutez ici la logique de fin de jeu
 			}
 		}
+	}
+
+	void AdjustDifficulty()
+	{
+		// Réduire le temps entre les spawns
+		spawnIntervalMin = Mathf.Max(minSpawnInterval, initialSpawnIntervalMin - molesHit * 0.02f);
+		spawnIntervalMax = Mathf.Max(minSpawnInterval, initialSpawnIntervalMax - molesHit * 0.02f);
+
+		// Réduire la durée de vie des taupes plus lentement
+		moleLifetime = Mathf.Max(minMoleLifetime, initialMoleLifetime - molesHit * 0.03f);
+
+		// Mettre à jour la vitesse de l'animation pour chaque taupe
+		foreach (var hole in holes)
+		{
+			Animator holeAnimator = hole.GetComponent<Animator>();
+			if (holeAnimator != null)
+			{
+				holeAnimator.speed = Mathf.Min(1 + molesHit * 0.02f, maxAnimationSpeed); 
+			}
+		}
+	}
+
+	int CalculateScore()
+	{
+		// Formule pour augmenter le score en fonction de la difficulté, avec un maximum
+		return Mathf.Min(baseScore + Mathf.FloorToInt(molesHit * 0.5f), maxScorePerMole);
 	}
 }
