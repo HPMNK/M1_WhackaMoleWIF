@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
 	public int lives = 3; // Nombre initial de vies
 	public GameObject heartPrefab; // Prefab du cœur
 	public RectTransform uiCanvas; // Référence au canvas UI
+	public float badMoleChance = 20f; // Pourcentage de chance d'avoir une "bad mole"
+	public RuntimeAnimatorController normalMoleController; // Animator Controller pour les taupes normales
+	public RuntimeAnimatorController badMoleController; // Animator Controller pour les "bad moles"
 
 	private int score = 0; // Score actuel
 	private int molesHit = 0; // Nombre de taupes frappées
@@ -111,8 +114,10 @@ public class GameManager : MonoBehaviour
 				Mole mole = selectedHole.GetComponent<Mole>();
 				if (mole != null && mole.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
 				{
+					bool isBadMole = Random.Range(0f, 100f) <= badMoleChance;
+					RuntimeAnimatorController controller = isBadMole ? badMoleController : normalMoleController;
 					activeMoles++; // Augmente le nombre de taupes actives
-					mole.Spawn();
+					mole.Spawn(controller, isBadMole);
 					StartCoroutine(HandleMoleLifeCycle(mole));
 				}
 			}
@@ -131,6 +136,14 @@ public class GameManager : MonoBehaviour
 		yield return new WaitUntil(() => mole.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"));
 
 		activeMoles--; // Diminue le nombre de taupes actives après la fin du cycle de vie
+	}
+
+	private IEnumerator HandleGameOver()
+	{
+		yield return new WaitForSeconds(0.8f);
+		PlayerPrefs.SetInt("FinalScore", score);
+		PlayerPrefs.Save();
+		SceneManager.LoadScene("GameOverScene"); // Charger la scène "GameOver"
 	}
 
 	void Update()
@@ -226,9 +239,8 @@ public class GameManager : MonoBehaviour
 
 			if (lives == 0)
 			{
-				PlayerPrefs.SetInt("FinalScore", score);
-				PlayerPrefs.Save();
-				SceneManager.LoadScene("GameOverScene"); // Charger la scène "GameOver"
+				StartCoroutine(HandleGameOver());
+
 			}
 		}
 	}

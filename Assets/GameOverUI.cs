@@ -41,4 +41,10 @@ public void ReloadGame()
 	{
 		SceneManager.LoadScene("WhackMoleGame"); 
 	}
+
+public void BacktoMenu()
+	{
+		SceneManager.LoadScene("MainMenu"); 
+	}
+
 }
