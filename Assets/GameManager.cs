@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
 	public RuntimeAnimatorController badMoleController; // Animator Controller pour les "bad moles"
 	public RuntimeAnimatorController lifeMoleController; // Animator Controller pour les "life moles"
 
+	public static GameManager Instance { get; private set; }
+	public float MoleLifetime { get { return moleLifetime; } }
+
 	private int score = 0; // Score actuel
 	private int molesHit = 0; // Nombre de taupes frappées
 	private float moleLifetime; // Durée de vie actuelle des taupes en secondes
@@ -43,6 +46,16 @@ public class GameManager : MonoBehaviour
 
 	void Awake()
 	{
+
+		if (Instance == null)
+		{
+			Instance = this;
+			DontDestroyOnLoad(gameObject);
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
 		// Initialiser les valeurs dynamiques
 		moleLifetime = initialMoleLifetime;
 		spawnIntervalMin = initialSpawnIntervalMin;
@@ -71,15 +84,24 @@ public class GameManager : MonoBehaviour
 			hearts[i] = heart;
 		}
 
+		Mole.OnMoleHit += AdjustScore;
 		Mole.OnLoseLife += LoseLife;
 		Mole.OnAddLife += AddLife;
 	}
 
 	void OnDestroy()
 	{
+		Mole.OnMoleHit -= AdjustScore;
 		Mole.OnLoseLife -= LoseLife;
 		Mole.OnAddLife -= AddLife;
 	}
+
+	void AdjustScore(float scorePercentage)
+	{
+		score += Mathf.CeilToInt(baseScore * scorePercentage);
+		UpdateScore();
+	}
+
 
 	void Start()
 	{

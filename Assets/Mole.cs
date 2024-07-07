@@ -9,6 +9,12 @@ public class Mole : MonoBehaviour
 	public bool IsLifeMole { get; private set; }
 	public static event Action OnLoseLife;
 	public static event Action OnAddLife;
+	public static event Action<float> OnMoleHit;
+
+
+	public float spawnStartTime;
+	public float maxSpawnTime = 2f; // Temps maximal pour réduire le score, basé sur la durée de vie de la taupe
+
 
 	void Awake()
 	{
@@ -18,6 +24,8 @@ public class Mole : MonoBehaviour
 		IsLifeMole = false;
 	}
 
+
+	
 	public void Spawn(RuntimeAnimatorController controller, bool isBadMole, bool isLifeMole)
 	{
 		animator.runtimeAnimatorController = controller;
@@ -25,6 +33,8 @@ public class Mole : MonoBehaviour
 		IsBadMole = isBadMole;
 		IsLifeMole = isLifeMole;
 		animator.SetBool("IsBadMole", isBadMole);
+		spawnStartTime = Time.time;
+		maxSpawnTime = GameManager.Instance.MoleLifetime;
 		animator.SetBool("IsLifeMole", isLifeMole);
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("Empty"))
 		{
@@ -38,6 +48,8 @@ public class Mole : MonoBehaviour
 		if (!IsHit)
 		{
 			IsHit = true;
+			float elapsedTime = (Time.time - spawnStartTime) / maxSpawnTime;
+			float scorePercentage = Mathf.Max(0.3f, 1 - elapsedTime); // Assure que le score ne descend pas en dessous de 30%
 			if (IsBadMole)
 			{
 				OnLoseLife?.Invoke();
@@ -47,6 +59,11 @@ public class Mole : MonoBehaviour
 			{
 				OnAddLife?.Invoke();
 				Debug.Log($"Taupe {gameObject.name} (life mole) frappée, gain de vie.");
+			}
+			else
+			{
+				OnMoleHit?.Invoke(scorePercentage);
+				Debug.Log($"Taupe {gameObject.name} frappée avec un score de {scorePercentage * 100}%.");
 			}
 			animator.ResetTrigger("despawn");
 			animator.SetTrigger("hit");
