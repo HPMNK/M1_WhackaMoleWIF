@@ -6,21 +6,26 @@ public class Mole : MonoBehaviour
 	private Animator animator;
 	public bool IsHit { get; private set; }
 	public bool IsBadMole { get; private set; }
+	public bool IsLifeMole { get; private set; }
 	public static event Action OnLoseLife;
+	public static event Action OnAddLife;
 
 	void Awake()
 	{
 		animator = GetComponent<Animator>();
 		IsHit = false;
 		IsBadMole = false;
+		IsLifeMole = false;
 	}
 
-	public void Spawn(RuntimeAnimatorController controller, bool isBadMole)
+	public void Spawn(RuntimeAnimatorController controller, bool isBadMole, bool isLifeMole)
 	{
 		animator.runtimeAnimatorController = controller;
 		IsHit = false;
 		IsBadMole = isBadMole;
+		IsLifeMole = isLifeMole;
 		animator.SetBool("IsBadMole", isBadMole);
+		animator.SetBool("IsLifeMole", isLifeMole);
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("Empty"))
 		{
 			ResetMole();
@@ -38,6 +43,11 @@ public class Mole : MonoBehaviour
 				OnLoseLife?.Invoke();
 				Debug.Log($"Taupe {gameObject.name} (bad mole) frappée, perte de vie.");
 			}
+			if (IsLifeMole)
+			{
+				OnAddLife?.Invoke();
+				Debug.Log($"Taupe {gameObject.name} (life mole) frappée, gain de vie.");
+			}
 			animator.ResetTrigger("despawn");
 			animator.SetTrigger("hit");
 			Debug.Log($"Taupe {gameObject.name} reçoit le trigger hit.");
@@ -54,7 +64,7 @@ public class Mole : MonoBehaviour
 
 	public void OnDespawnAnimationEnd()
 	{
-		if (!IsHit)
+		if (!IsHit && !IsLifeMole) // Pas de perte de vie pour les "life moles"
 		{
 			Debug.Log($"Taupe {gameObject.name} n'a pas été frappée, perte de vie.");
 			OnLoseLife?.Invoke();

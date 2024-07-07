@@ -22,8 +22,10 @@ public class GameManager : MonoBehaviour
 	public GameObject heartPrefab; // Prefab du cœur
 	public RectTransform uiCanvas; // Référence au canvas UI
 	public float badMoleChance = 20f; // Pourcentage de chance d'avoir une "bad mole"
+	public float lifeMoleChance = 10f; // Pourcentage de chance d'avoir une "life mole"
 	public RuntimeAnimatorController normalMoleController; // Animator Controller pour les taupes normales
 	public RuntimeAnimatorController badMoleController; // Animator Controller pour les "bad moles"
+	public RuntimeAnimatorController lifeMoleController; // Animator Controller pour les "life moles"
 
 	private int score = 0; // Score actuel
 	private int molesHit = 0; // Nombre de taupes frappées
@@ -70,11 +72,13 @@ public class GameManager : MonoBehaviour
 		}
 
 		Mole.OnLoseLife += LoseLife;
+		Mole.OnAddLife += AddLife;
 	}
 
 	void OnDestroy()
 	{
 		Mole.OnLoseLife -= LoseLife;
+		Mole.OnAddLife -= AddLife;
 	}
 
 	void Start()
@@ -114,10 +118,23 @@ public class GameManager : MonoBehaviour
 				Mole mole = selectedHole.GetComponent<Mole>();
 				if (mole != null && mole.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
 				{
-					bool isBadMole = Random.Range(0f, 100f) <= badMoleChance;
-					RuntimeAnimatorController controller = isBadMole ? badMoleController : normalMoleController;
+					float randomValue = Random.Range(0f, 100f);
+					bool isBadMole = randomValue <= badMoleChance;
+					bool isLifeMole = !isBadMole && randomValue <= (badMoleChance + lifeMoleChance) && lives < hearts.Length;
+
+					RuntimeAnimatorController controller = normalMoleController;
+
+					if (isBadMole)
+					{
+						controller = badMoleController;
+					}
+					else if (isLifeMole)
+					{
+						controller = lifeMoleController;
+					}
+
 					activeMoles++; // Augmente le nombre de taupes actives
-					mole.Spawn(controller, isBadMole);
+					mole.Spawn(controller, isBadMole, isLifeMole);
 					StartCoroutine(HandleMoleLifeCycle(mole));
 				}
 			}
@@ -199,8 +216,11 @@ public class GameManager : MonoBehaviour
 			molesHit++;
 			AdjustDifficulty();
 
-			score += CalculateScore();
-			UpdateScore();
+			if (!mole.IsBadMole && !mole.IsLifeMole) // Ne pas augmenter le score pour les bad moles et les life moles
+			{
+				score += CalculateScore();
+				UpdateScore();
+			}
 		}
 	}
 
@@ -242,6 +262,20 @@ public class GameManager : MonoBehaviour
 				StartCoroutine(HandleGameOver());
 
 			}
+		}
+	}
+
+	public void AddLife()
+	{
+		if (lives < hearts.Length)
+		{
+			Animator heartAnimator = hearts[lives].GetComponent<Animator>();
+			if (heartAnimator != null)
+			{
+				heartAnimator.SetBool("isEmpty", false);
+			}
+
+			lives++;
 		}
 	}
 

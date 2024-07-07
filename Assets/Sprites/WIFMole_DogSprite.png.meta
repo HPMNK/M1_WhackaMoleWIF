@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -148,7 +148,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -169,7 +169,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -190,7 +190,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -211,7 +211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -232,7 +232,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -253,7 +253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -274,7 +274,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 1152
+        y: 2016
         width: 96
         height: 144
       alignment: 0
@@ -295,7 +295,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -316,7 +316,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -337,7 +337,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -358,7 +358,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -379,7 +379,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -400,7 +400,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -421,7 +421,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -442,7 +442,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 1008
+        y: 1872
         width: 96
         height: 144
       alignment: 0
@@ -463,7 +463,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -484,7 +484,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -505,7 +505,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -526,7 +526,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -547,7 +547,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -568,7 +568,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -589,7 +589,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -610,7 +610,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 864
+        y: 1728
         width: 96
         height: 144
       alignment: 0
@@ -631,7 +631,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -652,7 +652,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -673,7 +673,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -694,7 +694,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -715,7 +715,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -736,7 +736,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -757,7 +757,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -778,7 +778,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 720
+        y: 1584
         width: 96
         height: 144
       alignment: 0
@@ -799,7 +799,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -820,7 +820,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -841,7 +841,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -862,7 +862,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -883,7 +883,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -904,7 +904,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -925,7 +925,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -946,7 +946,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 576
+        y: 1440
         width: 96
         height: 144
       alignment: 0
@@ -967,7 +967,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -988,7 +988,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -1009,7 +1009,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -1030,7 +1030,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -1051,7 +1051,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -1072,7 +1072,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -1093,7 +1093,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -1114,7 +1114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 432
+        y: 1296
         width: 96
         height: 144
       alignment: 0
@@ -1135,7 +1135,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1156,7 +1156,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1177,7 +1177,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1198,7 +1198,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1219,7 +1219,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1240,7 +1240,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1261,7 +1261,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1282,7 +1282,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 288
+        y: 1152
         width: 96
         height: 144
       alignment: 0
@@ -1303,7 +1303,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1324,7 +1324,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1345,7 +1345,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1366,7 +1366,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1387,7 +1387,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1408,7 +1408,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1429,7 +1429,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1450,7 +1450,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 144
+        y: 1008
         width: 96
         height: 144
       alignment: 0
@@ -1471,7 +1471,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 864
         width: 96
         height: 144
       alignment: 0
@@ -1492,7 +1492,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 864
         width: 96
         height: 144
       alignment: 0
@@ -1513,7 +1513,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 864
         width: 96
         height: 144
       alignment: 0
@@ -1534,7 +1534,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 864
         width: 96
         height: 144
       alignment: 0
@@ -1555,7 +1555,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 0
+        y: 864
         width: 96
         height: 144
       alignment: 0
@@ -1576,7 +1576,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 0
+        y: 864
         width: 96
         height: 144
       alignment: 0
@@ -1597,7 +1597,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 0
+        y: 864
         width: 96
         height: 144
       alignment: 0
@@ -1609,6 +1609,972 @@ TextureImporter:
       bones: []
       spriteID: 5adbda6f19e6c91468b54a0377fb0114
       internalID: -1870250807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_71
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 864
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c806bed91483abe46bc9bde4f7c2bae7
+      internalID: 2065188540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfd2e107b61cf1469eef0325fb2577d
+      internalID: -791184292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db55f0a82a4b91c49987a30c3a2a8b89
+      internalID: -1484200051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_74
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b38e9f4399df684faf75afcb98db46d
+      internalID: -387258225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_75
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97431101ae7301c459c826f8b1e78999
+      internalID: 306341381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148f1be2baecc674695a32c50036e4dc
+      internalID: 822977880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_77
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897f7338ada31ce46949b67a1e830677
+      internalID: 522214045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_78
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee5ac5f301c2764fba91fe7003b6443
+      internalID: -940690667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_79
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 720
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de37bdc6329cd884d97ca4e696bbcaa4
+      internalID: -1490767398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614cb56c081a2cc4b8a3d94ff0152af6
+      internalID: 1935596966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_81
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6936104412e53d64d88d1c9b8cca74f1
+      internalID: 2038354798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14237180d0893d409921950595eabfd
+      internalID: 304290019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_83
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ee0f43d0bcd6e41931445df8d8784a
+      internalID: -1493329402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7080dc2890206b945933d7cdb53022fa
+      internalID: -572953368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_85
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041f8fa4cf9e9494eba4b749b821b8cf
+      internalID: 643933441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_86
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252d235db50b40d46bc584d269e67f5a
+      internalID: 1826435353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_87
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750d66f647a43014b846bf2e0a149715
+      internalID: -1089178984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb0fd2df75fadd44aff5e04ddb4ee74
+      internalID: 1795628125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_89
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3b3bb9b88a88f4aaca1a7c7502cda7
+      internalID: 451913023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3034c218428bc764793bf1b8eac39fe4
+      internalID: -463130274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_91
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430c529a6bfde44488ba15b1ef28d087
+      internalID: 253610500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc866228c937bb43836c05624567225
+      internalID: 195715520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_93
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0af8278cf77fd4d96e6be6df504a9c
+      internalID: 2108053406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_94
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe53fb9b440a8c4480bbdd361a5ded3
+      internalID: -813879872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_95
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 432
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714d9059482f2284bbc1644d1aaf1a92
+      internalID: 1526920153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f690f71e85cf09f44b694b3c2cebfa0f
+      internalID: -2034974515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_97
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab5922bcbd2cbe40b856ad3d4ddee3c
+      internalID: 20592713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_98
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb777e4c7b26ab4cb8a453c66eb1b25
+      internalID: 1737952759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f769d2558a2fc64da551cadc6f9e873
+      internalID: 981420806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_100
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f441c65413fea4c84228c9eb94d6f3
+      internalID: 88894302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_101
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5eb870c5c32a2140a407e36b750dfd6
+      internalID: -1604025507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_102
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011991ceeda9f9048ab03a1d4c87e46a
+      internalID: 1755725122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_103
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9d338cf32088745a7c862cfa8daebd
+      internalID: -1322797003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa32ea651564064688d9c9f5157a918
+      internalID: 1404723392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_105
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f921cf127103ff74faefb14db47225a6
+      internalID: 1119765652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c389fc6974d3b24c8605b80e8153910
+      internalID: 875243398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_107
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac69b7db329773419086b13e00e82cb
+      internalID: 334765120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7dfd5ab26397a459bc1171692047c7
+      internalID: 1581810944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_109
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3803a72b6ab29e42922685d095130b0
+      internalID: 677156603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_110
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d848d97a69ed0344bf697f9dea1ddcf
+      internalID: 1638215851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_111
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 144
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23051d10fd7d279418efba780320ff15
+      internalID: -97896160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d0dafc34c545b44ad98e137f26886b
+      internalID: 1791032774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_113
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0e6f4449b13784f8ce57219e383845
+      internalID: 2132326694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_114
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68b112a54e36aa4a80c189eb9f7cfc6
+      internalID: 2088723330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_115
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1a9d320e41d7c4caf62f6ce0cd49bb
+      internalID: 647150965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_DogSprite_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa32b6bb38640134087a8408ffbd4c7c
+      internalID: 289194934
       vertices: []
       indices: 
       edges: []
@@ -1627,7 +2593,24 @@ TextureImporter:
       WIFMole_DogSprite_0: -1957709388
       WIFMole_DogSprite_1: 2138383257
       WIFMole_DogSprite_10: -1422758938
+      WIFMole_DogSprite_100: 88894302
+      WIFMole_DogSprite_101: -1604025507
+      WIFMole_DogSprite_102: 1755725122
+      WIFMole_DogSprite_103: -1322797003
+      WIFMole_DogSprite_104: 1404723392
+      WIFMole_DogSprite_105: 1119765652
+      WIFMole_DogSprite_106: 875243398
+      WIFMole_DogSprite_107: 334765120
+      WIFMole_DogSprite_108: 1581810944
+      WIFMole_DogSprite_109: 677156603
       WIFMole_DogSprite_11: -195888653
+      WIFMole_DogSprite_110: 1638215851
+      WIFMole_DogSprite_111: -97896160
+      WIFMole_DogSprite_112: 1791032774
+      WIFMole_DogSprite_113: 2132326694
+      WIFMole_DogSprite_114: 2088723330
+      WIFMole_DogSprite_115: 647150965
+      WIFMole_DogSprite_116: 289194934
       WIFMole_DogSprite_12: 54016207
       WIFMole_DogSprite_13: 372808903
       WIFMole_DogSprite_14: 347255672
@@ -1693,8 +2676,37 @@ TextureImporter:
       WIFMole_DogSprite_69: 329790764
       WIFMole_DogSprite_7: 760687477
       WIFMole_DogSprite_70: -1870250807
+      WIFMole_DogSprite_71: 2065188540
+      WIFMole_DogSprite_72: -791184292
+      WIFMole_DogSprite_73: -1484200051
+      WIFMole_DogSprite_74: -387258225
+      WIFMole_DogSprite_75: 306341381
+      WIFMole_DogSprite_76: 822977880
+      WIFMole_DogSprite_77: 522214045
+      WIFMole_DogSprite_78: -940690667
+      WIFMole_DogSprite_79: -1490767398
       WIFMole_DogSprite_8: -1573406647
+      WIFMole_DogSprite_80: 1935596966
+      WIFMole_DogSprite_81: 2038354798
+      WIFMole_DogSprite_82: 304290019
+      WIFMole_DogSprite_83: -1493329402
+      WIFMole_DogSprite_84: -572953368
+      WIFMole_DogSprite_85: 643933441
+      WIFMole_DogSprite_86: 1826435353
+      WIFMole_DogSprite_87: -1089178984
+      WIFMole_DogSprite_88: 1795628125
+      WIFMole_DogSprite_89: 451913023
       WIFMole_DogSprite_9: -728256139
+      WIFMole_DogSprite_90: -463130274
+      WIFMole_DogSprite_91: 253610500
+      WIFMole_DogSprite_92: 195715520
+      WIFMole_DogSprite_93: 2108053406
+      WIFMole_DogSprite_94: -813879872
+      WIFMole_DogSprite_95: 1526920153
+      WIFMole_DogSprite_96: -2034974515
+      WIFMole_DogSprite_97: 20592713
+      WIFMole_DogSprite_98: 1737952759
+      WIFMole_DogSprite_99: 981420806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
