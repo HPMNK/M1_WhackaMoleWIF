@@ -1164,7 +1164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchoredPosition: {x: 0, y: -280}
   m_SizeDelta: {x: 1284, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1651693900
@@ -1352,7 +1352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 678.0139, y: 154.36981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925031594
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   heartPrefab: {fileID: 7950821974219357160, guid: 9e5769365a5ee2b40a681ed2ea25f1c8, type: 3}
   uiCanvas: {fileID: 522429226}
   badMoleChance: 10
-  lifeMoleChance: 50
+  lifeMoleChance: 5
   normalMoleController: {fileID: 9100000, guid: f1848f05bffb9c042a76c6ab00aab9d2, type: 2}
   badMoleController: {fileID: 9100000, guid: 743809fbc7063ac46879d43f3a8b787a, type: 2}
   lifeMoleController: {fileID: 9100000, guid: 6ce3df5eb3d69c24f88c36e5c3b3926b, type: 2}
