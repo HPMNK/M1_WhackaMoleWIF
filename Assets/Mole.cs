@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using TMPro;
 
 public class Mole : MonoBehaviour
 {
@@ -9,23 +10,33 @@ public class Mole : MonoBehaviour
 	public bool IsLifeMole { get; private set; }
 	public static event Action OnLoseLife;
 	public static event Action OnAddLife;
-	public static event Action<float> OnMoleHit;
-
+	public static event Action<int> OnMoleHit;
 
 	public float spawnStartTime;
 	public float maxSpawnTime = 2f; // Temps maximal pour réduire le score, basé sur la durée de vie de la taupe
 
+	private TextMeshPro scoreText;
+	private GameObject holeScoreText;
+	private GameManager gameManager;
 
 	void Awake()
 	{
 		animator = GetComponent<Animator>();
+		holeScoreText = transform.Find("HoleScoreText").gameObject;
+		scoreText = holeScoreText.GetComponent<TextMeshPro>();
+		holeScoreText.SetActive(false);
+
 		IsHit = false;
 		IsBadMole = false;
 		IsLifeMole = false;
+
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+		if (gameManager == null)
+		{
+			Debug.LogError("GameManager not found in the scene.");
+		}
 	}
 
-
-	
 	public void Spawn(RuntimeAnimatorController controller, bool isBadMole, bool isLifeMole)
 	{
 		animator.runtimeAnimatorController = controller;
@@ -34,7 +45,7 @@ public class Mole : MonoBehaviour
 		IsLifeMole = isLifeMole;
 		animator.SetBool("IsBadMole", isBadMole);
 		spawnStartTime = Time.time;
-		maxSpawnTime = GameManager.Instance.MoleLifetime;
+		maxSpawnTime = gameManager.MoleLifetime;
 		animator.SetBool("IsLifeMole", isLifeMole);
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("Empty"))
 		{
@@ -53,21 +64,20 @@ public class Mole : MonoBehaviour
 			if (IsBadMole)
 			{
 				OnLoseLife?.Invoke();
-				Debug.Log($"Taupe {gameObject.name} (bad mole) frappée, perte de vie.");
 			}
-			if (IsLifeMole)
+			else if (IsLifeMole)
 			{
 				OnAddLife?.Invoke();
-				Debug.Log($"Taupe {gameObject.name} (life mole) frappée, gain de vie.");
 			}
 			else
 			{
-				OnMoleHit?.Invoke(scorePercentage);
-				Debug.Log($"Taupe {gameObject.name} frappée avec un score de {scorePercentage * 100}%.");
+				int scoreIncrement = Mathf.CeilToInt(gameManager.CalculateScore() * scorePercentage);
+				OnMoleHit?.Invoke(scoreIncrement);
+				scoreText.text = $"+{scoreIncrement}";
+				holeScoreText.SetActive(true); // Active le texte pour lancer l'animation
 			}
 			animator.ResetTrigger("despawn");
 			animator.SetTrigger("hit");
-			Debug.Log($"Taupe {gameObject.name} reçoit le trigger hit.");
 		}
 	}
 
@@ -83,12 +93,7 @@ public class Mole : MonoBehaviour
 	{
 		if (!IsHit && !IsLifeMole) // Pas de perte de vie pour les "life moles"
 		{
-			Debug.Log($"Taupe {gameObject.name} n'a pas été frappée, perte de vie.");
 			OnLoseLife?.Invoke();
-		}
-		else
-		{
-			Debug.Log($"Taupe {gameObject.name} a été frappée, pas de perte de vie.");
 		}
 		ResetMole();
 	}

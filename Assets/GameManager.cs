@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
 	public RuntimeAnimatorController badMoleController; // Animator Controller pour les "bad moles"
 	public RuntimeAnimatorController lifeMoleController; // Animator Controller pour les "life moles"
 
-	public static GameManager Instance { get; private set; }
 	public float MoleLifetime { get { return moleLifetime; } }
 
 	private int score = 0; // Score actuel
@@ -46,16 +45,6 @@ public class GameManager : MonoBehaviour
 
 	void Awake()
 	{
-
-		if (Instance == null)
-		{
-			Instance = this;
-			DontDestroyOnLoad(gameObject);
-		}
-		else
-		{
-			Destroy(gameObject);
-		}
 		// Initialiser les valeurs dynamiques
 		moleLifetime = initialMoleLifetime;
 		spawnIntervalMin = initialSpawnIntervalMin;
@@ -96,12 +85,11 @@ public class GameManager : MonoBehaviour
 		Mole.OnAddLife -= AddLife;
 	}
 
-	void AdjustScore(float scorePercentage)
+	void AdjustScore(int scoreIncrement)
 	{
-		score += Mathf.CeilToInt(baseScore * scorePercentage);
+		score += scoreIncrement;
 		UpdateScore();
 	}
-
 
 	void Start()
 	{
@@ -237,12 +225,6 @@ public class GameManager : MonoBehaviour
 
 			molesHit++;
 			AdjustDifficulty();
-
-			if (!mole.IsBadMole && !mole.IsLifeMole) // Ne pas augmenter le score pour les bad moles et les life moles
-			{
-				score += CalculateScore();
-				UpdateScore();
-			}
 		}
 	}
 
@@ -282,7 +264,6 @@ public class GameManager : MonoBehaviour
 			if (lives == 0)
 			{
 				StartCoroutine(HandleGameOver());
-
 			}
 		}
 	}
@@ -324,7 +305,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	int CalculateScore()
+	public int CalculateScore()
 	{
 		// Formule pour augmenter le score en fonction de la difficulté, avec un maximum
 		return Mathf.Min(baseScore + Mathf.FloorToInt(molesHit * 0.5f), maxScorePerMole);
