@@ -156,10 +156,7 @@ public class GameManager : MonoBehaviour
 	{
 		yield return new WaitForSeconds(moleLifetime);
 
-		if (!mole.IsHit) // Vérifie si la taupe n'a pas été frappée
-		{
-			mole.Despawn();
-		}
+		mole.Despawn();
 
 		yield return new WaitUntil(() => mole.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"));
 

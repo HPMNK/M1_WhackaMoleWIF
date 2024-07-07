@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 using TMPro;
 
 public class Mole : MonoBehaviour
@@ -83,11 +84,27 @@ public class Mole : MonoBehaviour
 
 	public void Despawn()
 	{
-		if (!IsHit && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+		if (!IsHit)
 		{
-			animator.SetTrigger("despawn");
+			if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+			{
+				animator.SetTrigger("despawn");
+			}
+			else
+			{
+				// Forcer le despawn si la taupe est bloquée
+				StartCoroutine(ForceDespawn());
+			}
 		}
 	}
+
+	private IEnumerator ForceDespawn()
+	{
+		yield return new WaitForSeconds(0.1f); // Attendre un court instant pour permettre à l'animation de se mettre à jour
+		animator.SetTrigger("despawn");
+		Debug.Log($"Taupe {gameObject.name} forcée de passer à l'état Despawn.");
+	}
+
 
 	public void OnDespawnAnimationEnd()
 	{
