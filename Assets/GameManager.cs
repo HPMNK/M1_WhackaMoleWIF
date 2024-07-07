@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI; 
 
 public class GameManager : MonoBehaviour
 {
@@ -246,11 +247,19 @@ public class GameManager : MonoBehaviour
 			{
 				heartAnimator.SetBool("isEmpty", true);
 
-				// Ajout de l'effet de shake screen pour le cœur
+				// Ajout de l'effet de scale et de shake pour le cœur
 				RectTransform heartRect = hearts[lives].GetComponent<RectTransform>();
 				if (heartRect != null)
 				{
-					heartRect.DOShakeAnchorPos(0.2f, 1f, 25, 90, false, true);
+					// Effet de scale
+					heartRect.DOScale(1.2f, 0.2f).SetLoops(2, LoopType.Yoyo);
+
+					// Effet de shake
+					Vector2 originalPos = heartRect.anchoredPosition;
+					heartRect.DOAnchorPos(originalPos + new Vector2(10f, 0f), 0.1f).SetLoops(4, LoopType.Yoyo).OnComplete(() =>
+					{
+						heartRect.DOShakeAnchorPos(0.2f, 10f, 20, 60, false, true).SetDelay(0.1f);
+					});
 				}
 			}
 
@@ -278,10 +287,16 @@ public class GameManager : MonoBehaviour
 				heartAnimator.SetBool("isEmpty", false);
 			}
 
+			RectTransform heartRect = hearts[lives].GetComponent<RectTransform>();
+			if (heartRect != null)
+			{
+				// Effet de scale
+				heartRect.DOScale(3.4f, 0.3f).SetLoops(2, LoopType.Yoyo);
+			}
+
 			lives++;
 		}
 	}
-
 	void AdjustDifficulty()
 	{
 		// Réduire le temps entre les spawns
