@@ -8,6 +8,7 @@ public class ButtonTweenHover : MonoBehaviour, IPointerEnterHandler, IPointerExi
 	public float scaleAmount = 1.2f; // Facteur d'échelle pour agrandir le bouton
 	public float tweenDuration = 0.2f; // Durée de l'animation Tween
 
+
 	private RectTransform buttonTransform;
 	private Vector3 originalScale;
 

@@ -37,14 +37,6 @@ public class GameOverUI : MonoBehaviour
         
     }
 
-public void ReloadGame()
-	{
-		SceneManager.LoadScene("WhackMoleGame"); 
-	}
 
-public void BacktoMenu()
-	{
-		SceneManager.LoadScene("MainMenu"); 
-	}
 
 }
