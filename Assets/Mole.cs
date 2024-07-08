@@ -20,6 +20,11 @@ public class Mole : MonoBehaviour
 	private GameObject holeScoreText;
 	private GameManager gameManager;
 
+	public AudioClip moleHitClip;
+	public AudioClip badMoleHitClip;
+	public AudioClip lifeMoleHitClip;
+	private AudioSource audioSource;
+
 	void Awake()
 	{
 		animator = GetComponent<Animator>();
@@ -35,6 +40,12 @@ public class Mole : MonoBehaviour
 		if (gameManager == null)
 		{
 			Debug.LogError("GameManager not found in the scene.");
+		}
+
+		audioSource = GetComponent<AudioSource>();
+		if (audioSource == null)
+		{
+			audioSource = gameObject.AddComponent<AudioSource>();
 		}
 	}
 
@@ -64,14 +75,24 @@ public class Mole : MonoBehaviour
 			float scorePercentage = Mathf.Max(0.3f, 1 - elapsedTime); // Assure que le score ne descend pas en dessous de 30%
 			if (IsBadMole)
 			{
+				audioSource.pitch = 1.0f; // Reset pitch to default for this sound
+
+				PlaySound(badMoleHitClip);
+
 				OnLoseLife?.Invoke();
 			}
 			else if (IsLifeMole)
 			{
+				audioSource.pitch = 1.0f; // Reset pitch to default for this sound
+
+				PlaySound(lifeMoleHitClip);
+
 				OnAddLife?.Invoke();
 			}
 			else
 			{
+				PlaySoundWithRandomPitch(moleHitClip, 0.95f, 1.1f);
+
 				int scoreIncrement = Mathf.CeilToInt(gameManager.CalculateScore() * scorePercentage);
 				OnMoleHit?.Invoke(scoreIncrement);
 				scoreText.text = $"+{scoreIncrement}";
@@ -122,5 +143,22 @@ public class Mole : MonoBehaviour
 		animator.ResetTrigger("despawn");
 		animator.Play("Empty");
 		IsHit = false;
+	}
+
+	private void PlaySound(AudioClip clip)
+	{
+		if (audioSource != null && clip != null)
+		{
+			audioSource.PlayOneShot(clip);
+		}
+	}
+
+	private void PlaySoundWithRandomPitch(AudioClip clip, float minPitch = 0.9f, float maxPitch = 1.1f)
+	{
+		if (audioSource != null && clip != null)
+		{
+			audioSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
+			audioSource.PlayOneShot(clip);
+		}
 	}
 }
