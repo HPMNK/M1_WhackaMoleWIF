@@ -44,6 +44,10 @@ public class GameManager : MonoBehaviour
 
 	bool isPaused = false;
 
+	private AudioSource sceneMusicAudioSource; // AudioSource pour la musique de la scène
+
+
+
 	void Awake()
 	{
 		// Initialiser les valeurs dynamiques
@@ -77,6 +81,13 @@ public class GameManager : MonoBehaviour
 		Mole.OnMoleHit += AdjustScore;
 		Mole.OnLoseLife += LoseLife;
 		Mole.OnAddLife += AddLife;
+
+		GameObject sceneMusic = GameObject.Find("SceneMusic");
+		sceneMusicAudioSource = sceneMusic.GetComponent<AudioSource>();
+		sceneMusicAudioSource.Play();
+
+
+
 	}
 
 	void OnDestroy()
