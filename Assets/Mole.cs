@@ -6,9 +6,12 @@ using TMPro;
 public class Mole : MonoBehaviour
 {
 	private Animator animator;
+	public Material defaultMaterial; // Default material for reset
+	private Material currentMaterial; // Current material of the mole
 	public bool IsHit { get; private set; }
 	public bool IsBadMole { get; private set; }
 	public bool IsLifeMole { get; private set; }
+	public bool IsBonusMole { get; private set; }
 	public static event Action OnLoseLife;
 	public static event Action OnAddLife;
 	public static event Action<int> OnMoleHit;
@@ -19,6 +22,10 @@ public class Mole : MonoBehaviour
 	private TextMeshPro scoreText;
 	private GameObject holeScoreText;
 	private GameManager gameManager;
+
+	
+	public int scoreMultiplier = 1; // Base score multiplier
+
 
 	public AudioClip moleHitClip;
 	public AudioClip badMoleHitClip;
@@ -48,17 +55,37 @@ public class Mole : MonoBehaviour
 			audioSource = gameObject.AddComponent<AudioSource>();
 		}
 	}
+	public void SetProperties(RuntimeAnimatorController controller, Material material, int scoreMultiplier)
+	{
+		// Récupérer le SpriteRenderer attaché à ce GameObject
+		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+		if (spriteRenderer == null)
+		{
+			Debug.LogError("No SpriteRenderer found on the GameObject");
+			return;
+		}
 
-	public void Spawn(RuntimeAnimatorController controller, bool isBadMole, bool isLifeMole)
+		// Appliquer le contrôleur d'animation et le matériau
+		animator.runtimeAnimatorController = controller;
+		spriteRenderer.material = material;
+		this.scoreMultiplier = scoreMultiplier;
+	}
+
+	public void Spawn(RuntimeAnimatorController controller, bool isBadMole, bool isLifeMole, bool isBonusMole = false)
 	{
 		animator.runtimeAnimatorController = controller;
 		IsHit = false;
 		IsBadMole = isBadMole;
 		IsLifeMole = isLifeMole;
+		IsBonusMole = isBonusMole;
+
 		animator.SetBool("IsBadMole", isBadMole);
+		animator.SetBool("IsLifeMole", isLifeMole);
+		animator.SetBool("IsBonusMole", isBonusMole);
+
 		spawnStartTime = Time.time;
 		maxSpawnTime = gameManager.MoleLifetime;
-		animator.SetBool("IsLifeMole", isLifeMole);
+
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("Empty"))
 		{
 			ResetMole();
@@ -93,7 +120,7 @@ public class Mole : MonoBehaviour
 			{
 				PlaySoundWithRandomPitch(moleHitClip, 0.95f, 1.1f);
 
-				int scoreIncrement = Mathf.CeilToInt(gameManager.CalculateScore() * scorePercentage);
+				int scoreIncrement = Mathf.CeilToInt(gameManager.CalculateScore() * scorePercentage * scoreMultiplier);
 				OnMoleHit?.Invoke(scoreIncrement);
 				scoreText.text = $"+{scoreIncrement}";
 				holeScoreText.SetActive(true); // Active le texte pour lancer l'animation
@@ -138,6 +165,9 @@ public class Mole : MonoBehaviour
 
 	private void ResetMole()
 	{
+		GetComponent<SpriteRenderer>().material = defaultMaterial; // Reset to default material
+		this.currentMaterial = defaultMaterial;
+		this.scoreMultiplier = 1; // Reset the score multiplier
 		animator.ResetTrigger("spawn");
 		animator.ResetTrigger("hit");
 		animator.ResetTrigger("despawn");

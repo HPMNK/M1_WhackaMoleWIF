@@ -167,8 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a765521620eebba42a7fb1e913ea0637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   spawnStartTime: 0
   maxSpawnTime: 2
+  scoreMultiplier: 1
   moleHitClip: {fileID: 8300000, guid: e34d20c21482ccf449d8ce5bc7228c04, type: 3}
   badMoleHitClip: {fileID: 8300000, guid: 4db3ee6ee7f193b4894ddb2bb1bda7bf, type: 3}
   lifeMoleHitClip: {fileID: 8300000, guid: 6b0d62e5c2b2bdd4ba40969b5f240b6e, type: 3}
@@ -304,7 +306,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.327}
-  m_SizeDelta: {x: 5.82, y: 5}
+  m_SizeDelta: {x: 4.7353, y: 3.9368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2311354906212053321
 MeshRenderer:
@@ -395,12 +397,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
+  m_fontSize: 18
   m_fontSizeBase: 12
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 4
+  m_fontSizeMax: 18
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

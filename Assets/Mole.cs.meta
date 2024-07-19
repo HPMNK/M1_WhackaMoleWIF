@@ -3,7 +3,11 @@ guid: a765521620eebba42a7fb1e913ea0637
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - moleHitClip: {instanceID: 0}
+  - badMoleHitClip: {instanceID: 0}
+  - lifeMoleHitClip: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

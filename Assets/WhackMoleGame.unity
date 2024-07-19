@@ -1384,6 +1384,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 228684674481543990, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb889a5a2fbc7564cbf5fcbd5eb24db5, type: 2}
     - target: {fileID: 1147481045063740738, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -1432,6 +1436,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2221732031678868903, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bba3b062cf524144d82bbfadae0cd08f, type: 2}
     - target: {fileID: 2259581579209305799, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1772,6 +1780,17 @@ MonoBehaviour:
   normalMoleController: {fileID: 9100000, guid: f1848f05bffb9c042a76c6ab00aab9d2, type: 2}
   badMoleController: {fileID: 9100000, guid: 743809fbc7063ac46879d43f3a8b787a, type: 2}
   lifeMoleController: {fileID: 9100000, guid: 6ce3df5eb3d69c24f88c36e5c3b3926b, type: 2}
+  bonusGreen: {fileID: 2100000, guid: 080bbdc497ada1740a7538e0a69dae8f, type: 2}
+  bonusBlue: {fileID: 2100000, guid: cb889a5a2fbc7564cbf5fcbd5eb24db5, type: 2}
+  bonusPurple: {fileID: 2100000, guid: b538715d2f5598145ba8e16f64426c70, type: 2}
+  bonusMoleAnimator: {fileID: 9100000, guid: bba3b062cf524144d82bbfadae0cd08f, type: 2}
+  bonusLowMultiplier: 10
+  bonusMidMultiplier: 20
+  bonusHighMultiplier: 50
+  chanceToSpawnBonusMole: 30
+  bonusMoleLowChance: 60
+  bonusMoleMidChance: 35
+  bonusMoleHighChance: 5
 --- !u!4 &2105106598
 Transform:
   m_ObjectHideFlags: 0

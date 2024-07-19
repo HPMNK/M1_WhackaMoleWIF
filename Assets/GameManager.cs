@@ -42,6 +42,15 @@ public class GameManager : MonoBehaviour
 	private int activeMoles = 0; // Nombre de taupes actives
 	private int maxActiveMoles = 2; // Nombre maximal de taupes actives au début du jeu
 
+	public Material bonusGreen, bonusBlue, bonusPurple; // Matériaux pour les bonusMoles
+	public RuntimeAnimatorController bonusMoleAnimator; // Animator pour tous les bonusMoles
+	public int bonusLowMultiplier = 10;
+	public int bonusMidMultiplier = 20;
+	public int bonusHighMultiplier = 50;
+	public float chanceToSpawnBonusMole = 3f; // Chance globale de faire apparaître une bonusMole
+	public float bonusMoleLowChance = 60f; // Chance de faire apparaître une bonusMole de bas niveau
+	public float bonusMoleMidChance = 35f; // Chance de faire apparaître une bonusMole de niveau moyen
+	public float bonusMoleHighChance = 5f; // Chance de faire apparaître une bonusMole de haut niveau
 	bool isPaused = false;
 
 	private AudioSource sceneMusicAudioSource; // AudioSource pour la musique de la scène
@@ -141,26 +150,63 @@ public class GameManager : MonoBehaviour
 				if (mole != null && mole.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
 				{
 					float randomValue = Random.Range(0f, 100f);
-					bool isBadMole = randomValue <= badMoleChance;
-					bool isLifeMole = !isBadMole && randomValue <= (badMoleChance + lifeMoleChance) && lives < hearts.Length;
 
-					RuntimeAnimatorController controller = normalMoleController;
-
-					if (isBadMole)
+					if (randomValue <= chanceToSpawnBonusMole)
 					{
-						controller = badMoleController;
+						StartCoroutine(SpawnBonusMole(mole));
 					}
-					else if (isLifeMole)
+					else
 					{
-						controller = lifeMoleController;
-					}
+						bool isBadMole = randomValue <= badMoleChance;
+						bool isLifeMole = !isBadMole && randomValue <= (badMoleChance + lifeMoleChance) && lives < hearts.Length;
 
-					activeMoles++; // Augmente le nombre de taupes actives
-					mole.Spawn(controller, isBadMole, isLifeMole);
-					StartCoroutine(HandleMoleLifeCycle(mole));
+						RuntimeAnimatorController controller = normalMoleController;
+
+						if (isBadMole)
+						{
+							controller = badMoleController;
+						}
+						else if (isLifeMole)
+						{
+							controller = lifeMoleController;
+						}
+
+						activeMoles++; // Augmente le nombre de taupes actives
+						mole.Spawn(controller, isBadMole, isLifeMole);
+						StartCoroutine(HandleMoleLifeCycle(mole));
+					}
 				}
 			}
 		}
+	}
+
+	IEnumerator SpawnBonusMole(Mole mole)
+	{
+		float tierChance = Random.Range(0f, 100f);
+		Material selectedMaterial;
+		int scoreMultiplier;
+
+		if (tierChance < bonusMoleLowChance)
+		{
+			selectedMaterial = bonusGreen;
+			scoreMultiplier = bonusLowMultiplier;
+		}
+		else if (tierChance < bonusMoleLowChance + bonusMoleMidChance)
+		{
+			selectedMaterial = bonusBlue;
+			scoreMultiplier = bonusMidMultiplier;
+		}
+		else
+		{
+			selectedMaterial = bonusPurple;
+			scoreMultiplier = bonusHighMultiplier;
+		}
+		mole.Spawn(bonusMoleAnimator, false, false, true);
+
+		mole.SetProperties(bonusMoleAnimator, selectedMaterial, scoreMultiplier);
+		activeMoles++;
+		StartCoroutine(HandleMoleLifeCycle(mole));
+		yield return null;
 	}
 
 	IEnumerator HandleMoleLifeCycle(Mole mole)
@@ -330,7 +376,6 @@ public class GameManager : MonoBehaviour
 
 	public int CalculateScore()
 	{
-		// Formule pour augmenter le score en fonction de la difficulté, avec un maximum
-		return Mathf.Min(baseScore + Mathf.FloorToInt(molesHit * 0.5f), maxScorePerMole);
+		return Mathf.Min(baseScore + Mathf.FloorToInt(molesHit * 3f), maxScorePerMole);
 	}
 }
