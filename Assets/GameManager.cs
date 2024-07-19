@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 	private int activeMoles = 0; // Nombre de taupes actives
 	private int maxActiveMoles = 2; // Nombre maximal de taupes actives au début du jeu
 
-	public Material bonusGreen, bonusBlue, bonusPurple; // Matériaux pour les bonusMoles
+	public Material bonusLow, bonusMid, bonusHigh; // Matériaux pour les bonusMoles
 	public RuntimeAnimatorController bonusMoleAnimator; // Animator pour tous les bonusMoles
 	public int bonusLowMultiplier = 10;
 	public int bonusMidMultiplier = 20;
@@ -188,17 +188,17 @@ public class GameManager : MonoBehaviour
 
 		if (tierChance < bonusMoleLowChance)
 		{
-			selectedMaterial = bonusGreen;
+			selectedMaterial = bonusLow;
 			scoreMultiplier = bonusLowMultiplier;
 		}
 		else if (tierChance < bonusMoleLowChance + bonusMoleMidChance)
 		{
-			selectedMaterial = bonusBlue;
+			selectedMaterial = bonusMid;
 			scoreMultiplier = bonusMidMultiplier;
 		}
 		else
 		{
-			selectedMaterial = bonusPurple;
+			selectedMaterial = bonusHigh;
 			scoreMultiplier = bonusHighMultiplier;
 		}
 		mole.Spawn(bonusMoleAnimator, false, false, true);
