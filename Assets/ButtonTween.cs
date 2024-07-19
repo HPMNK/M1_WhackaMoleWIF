@@ -5,8 +5,8 @@ using DG.Tweening;
 
 public class ButtonTweenHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-	public float scaleAmount = 1.2f; // Facteur d'échelle pour agrandir le bouton
-	public float tweenDuration = 0.2f; // Durée de l'animation Tween
+	public float scaleAmount = 1.2f; // Facteur d'ï¿½chelle pour agrandir le bouton
+	public float tweenDuration = 0.2f; // Durï¿½e de l'animation Tween
 
 
 	private RectTransform buttonTransform;
@@ -26,7 +26,7 @@ public class ButtonTweenHover : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
 	public void OnPointerExit(PointerEventData eventData)
 	{
-		// Rétablir la taille originale lorsque la souris quitte le bouton
+		// Rï¿½tablir la taille originale lorsque la souris quitte le bouton
 		buttonTransform.DOScale(originalScale, tweenDuration);
 	}
 }
