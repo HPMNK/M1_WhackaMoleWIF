@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
 
 public class GameOverUI : MonoBehaviour
@@ -13,6 +14,7 @@ public class GameOverUI : MonoBehaviour
 
 	void Start()
 	{
+
 		GameObject scoreTextObject = GameObject.Find("ScoreText");
 
 		if (scoreTextObject != null)
@@ -25,17 +27,16 @@ public class GameOverUI : MonoBehaviour
 			{
 				int finalScore = PlayerPrefs.GetInt("FinalScore", 0);
 
+				//Update the Leaderboard
+				Leaderboards.UpdateScore(finalScore);
+				
 				scoreText.text = finalScore.ToString();
 
 			}
 		}
-	} 
+	}
 
-	// Update is called once per frame
-	void Update()
-    {
-        
-    }
+	
 
 
 }
