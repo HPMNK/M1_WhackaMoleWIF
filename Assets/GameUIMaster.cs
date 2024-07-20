@@ -35,6 +35,10 @@ public class GameUIMaster : MonoBehaviour
 		StartCoroutine(BacktoMenuCoroutine	());
 	}
 
+	public void LaunchLeaderboard()
+	{
+		StartCoroutine(LaunchLeaderboardCoroutine());
+	}
 
 	private IEnumerator LaunchGameCoroutine()
 	{
@@ -42,6 +46,14 @@ public class GameUIMaster : MonoBehaviour
 		yield return new WaitForSeconds(buttonClickSound.length);
 		SceneManager.LoadScene("WhackMoleGame");
 	}
+
+	private IEnumerator LaunchLeaderboardCoroutine()
+	{
+		audioSource.PlayOneShot(buttonClickSound);
+		yield return new WaitForSeconds(buttonClickSound.length);
+		SceneManager.LoadScene("Leaderboard");
+	}
+
 
 	private IEnumerator BacktoMenuCoroutine()
 	{
