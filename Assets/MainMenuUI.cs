@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+
+	private void Awake()
+	{
+		PlayerPrefs.SetInt("SelectedLevel", 0);
+		PlayerPrefs.Save();
+	}
+	void Start()
     {
         
     }

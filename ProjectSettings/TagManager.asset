@@ -38,8 +38,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Back
+  - name: Background
     uniqueID: 1210961693
+    locked: 0
+  - name: Holes
+    uniqueID: 3952935631
+    locked: 0
+  - name: Mole
+    uniqueID: 2412449757
     locked: 0
   - name: Default
     uniqueID: 0

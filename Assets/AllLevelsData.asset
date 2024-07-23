@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c01e2ea351d1b744afdc5cc7b2dff5b, type: 3}
+  m_Name: AllLevelsData
+  m_EditorClassIdentifier: 
+  levels:
+  - illustration: {fileID: 21300000, guid: 3b00aec24852b6b4bae491b009915a00, type: 3}
+    levelName: Backyard
+    gameSkin: {fileID: 21300000, guid: 79341516e6609f648818bb141514b456, type: 3}
+    holeSkin: {fileID: -1358520268, guid: e81535b016d8af74f9076f7647e10d63, type: 3}
+  - illustration: {fileID: 21300000, guid: 86fabf569dbeb084a896a25008fcf37b, type: 3}
+    levelName: City
+    gameSkin: {fileID: 21300000, guid: e078dd3701748e04f94bfae7b5460c06, type: 3}
+    holeSkin: {fileID: -1075531850, guid: e81535b016d8af74f9076f7647e10d63, type: 3}

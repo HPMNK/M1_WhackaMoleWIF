@@ -30,6 +30,12 @@ public class GameUIMaster : MonoBehaviour
 		StartCoroutine(LaunchGameCoroutine());
 	}
 
+public void LaunchLevelSelection()
+	{
+		StartCoroutine(LaunchLevelSelectionCoroutine());
+
+	}
+
 	public void BackToMenu()
 	{
 		StartCoroutine(BacktoMenuCoroutine	());
@@ -40,10 +46,17 @@ public class GameUIMaster : MonoBehaviour
 		StartCoroutine(LaunchLeaderboardCoroutine());
 	}
 
+	private IEnumerator LaunchLevelSelectionCoroutine()
+	{
+		audioSource.PlayOneShot(buttonClickSound);
+		yield return new WaitForSeconds(0.4f);
+		SceneManager.LoadScene("LevelSelection");
+	}
+
 	private IEnumerator LaunchGameCoroutine()
 	{
 		audioSource.PlayOneShot(buttonClickSound);
-		yield return new WaitForSeconds(buttonClickSound.length);
+		yield return new WaitForSeconds(0.4f);
 		SceneManager.LoadScene("WhackMoleGame");
 	}
 
