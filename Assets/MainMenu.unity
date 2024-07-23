@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4fe15b632c23ef479b52aa1d118c224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isTelegramBuild: 1
+  _isTelegramBuild: 0
 --- !u!4 &854116840
 Transform:
   m_ObjectHideFlags: 0
