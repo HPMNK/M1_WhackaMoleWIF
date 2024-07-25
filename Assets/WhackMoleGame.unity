@@ -1468,10 +1468,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hole4
       objectReference: {fileID: 0}
+    - target: {fileID: 1622509284321878932, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
+      propertyPath: m_Size.x
+      value: 0.76311314
+      objectReference: {fileID: 0}
     - target: {fileID: 2221732031678868903, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: bba3b062cf524144d82bbfadae0cd08f, type: 2}
+      objectReference: {fileID: 9100000, guid: a3e16bb945247524f8d2fa6bec555736, type: 2}
     - target: {fileID: 2259581579209305799, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1805,22 +1809,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb61b56aa2462a4dbe87d23c1bb8ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialMoleLifetime: 0.2
+  initialMoleLifetime: 1.2
   initialSpawnIntervalMin: 0.5
   initialSpawnIntervalMax: 1
-  minMoleLifetime: 0.2
+  minMoleLifetime: 0.15
   minSpawnInterval: 0.2
-  maxAnimationSpeed: 2.2
+  maxAnimationSpeed: 2.4
   baseScore: 30
   maxScorePerMole: 5000
   lives: 3
   heartPrefab: {fileID: 7950821974219357160, guid: 9e5769365a5ee2b40a681ed2ea25f1c8, type: 3}
   uiCanvas: {fileID: 522429226}
   badMoleChance: 10
-  lifeMoleChance: 5
+  lifeMoleChance: 3
   normalMoleController: {fileID: 9100000, guid: f1848f05bffb9c042a76c6ab00aab9d2, type: 2}
   badMoleController: {fileID: 9100000, guid: 743809fbc7063ac46879d43f3a8b787a, type: 2}
   lifeMoleController: {fileID: 9100000, guid: 6ce3df5eb3d69c24f88c36e5c3b3926b, type: 2}
+  fishController: {fileID: 9100000, guid: a3e16bb945247524f8d2fa6bec555736, type: 2}
+  durevController: {fileID: 9100000, guid: 99413a04a9f40534db41143329b69b82, type: 2}
   bonusLow: {fileID: 2100000, guid: b538715d2f5598145ba8e16f64426c70, type: 2}
   bonusMid: {fileID: 2100000, guid: 080bbdc497ada1740a7538e0a69dae8f, type: 2}
   bonusHigh: {fileID: 2100000, guid: cb889a5a2fbc7564cbf5fcbd5eb24db5, type: 2}
@@ -1829,9 +1835,9 @@ MonoBehaviour:
   bonusMidMultiplier: 5
   bonusHighMultiplier: 10
   chanceToSpawnBonusMole: 5
-  bonusMoleLowChance: 80
-  bonusMoleMidChance: 15
-  bonusMoleHighChance: 5
+  bonusMoleLowChance: 50
+  bonusMoleMidChance: 35
+  bonusMoleHighChance: 15
 --- !u!4 &2105106598
 Transform:
   m_ObjectHideFlags: 0
@@ -1941,7 +1947,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.9392351, y: 1.9392351, z: 1}
+  m_LocalScale: {x: 1.6239156, y: 1.6239156, z: 0.8374}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

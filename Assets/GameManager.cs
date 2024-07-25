@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 	public RuntimeAnimatorController normalMoleController; // Animator Controller pour les taupes normales
 	public RuntimeAnimatorController badMoleController; // Animator Controller pour les "bad moles"
 	public RuntimeAnimatorController lifeMoleController; // Animator Controller pour les "life moles"
+	public RuntimeAnimatorController fishController; // Animator Controller pour les "life moles"
+	public RuntimeAnimatorController durevController; // Animator Controller pour les "life moles"
 
 	public float MoleLifetime { get { return moleLifetime; } }
 
@@ -186,24 +188,31 @@ public class GameManager : MonoBehaviour
 		Material selectedMaterial;
 		int scoreMultiplier;
 
+		RuntimeAnimatorController controller = normalMoleController;
+
+
 		if (tierChance < bonusMoleLowChance)
 		{
 			selectedMaterial = bonusLow;
 			scoreMultiplier = bonusLowMultiplier;
+			controller = bonusMoleAnimator;
+			
 		}
 		else if (tierChance < bonusMoleLowChance + bonusMoleMidChance)
 		{
-			selectedMaterial = bonusMid;
+			selectedMaterial = mole.defaultMaterial;
 			scoreMultiplier = bonusMidMultiplier;
+			controller = durevController; 
 		}
 		else
 		{
-			selectedMaterial = bonusHigh;
+			selectedMaterial = mole.defaultMaterial;
 			scoreMultiplier = bonusHighMultiplier;
+			controller = fishController;
 		}
-		mole.Spawn(bonusMoleAnimator, false, false, true);
+		mole.Spawn(controller, false, false, true);
 
-		mole.SetProperties(bonusMoleAnimator, selectedMaterial, scoreMultiplier);
+		mole.SetProperties(controller, selectedMaterial, scoreMultiplier);
 		activeMoles++;
 		StartCoroutine(HandleMoleLifeCycle(mole));
 		yield return null;
