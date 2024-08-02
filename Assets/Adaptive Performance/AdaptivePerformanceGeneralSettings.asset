@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-648334166105058250
+--- !u!114 &-4413166356964976737
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29,8 +29,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Keys: 0d000000
   Values:
-  - {fileID: 372378706038602938}
---- !u!114 &372378706038602938
+  - {fileID: 2214121095753032076}
+--- !u!114 &2214121095753032076
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,5 +42,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179fc3111e144bc4688dca4038b3265d, type: 3}
   m_Name: WebGL Settings
   m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: -648334166105058250}
-  m_InitManagerOnStart: 0
+  m_LoaderManagerInstance: {fileID: -4413166356964976737}
+  m_InitManagerOnStart: 1
