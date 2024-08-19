@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6528182841231561533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3041981092654070171}
+  - component: {fileID: 6124972939124344393}
+  - component: {fileID: 6271637671535770400}
+  m_Layer: 5
+  m_Name: ----UIDocument
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3041981092654070171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6528182841231561533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6124972939124344393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6528182841231561533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: aefe6afbb9b4df043b7e50558b4f404f, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 6a1528a318b5ea1449f87f9e9ef3c442, type: 3}
+  m_SortingOrder: 0
+--- !u!114 &6271637671535770400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6528182841231561533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f6c3af86e96df48be98f0772e2df84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseSavedWalletIcons: 1
+  WalletIcons:
+  - {fileID: 21300000, guid: 7486662b87d25f74ca59c889405af3f7, type: 3}
+  - {fileID: 21300000, guid: 5f1fa174b7cfef445a2d0ff5ceaf0b89, type: 3}
+  - {fileID: 21300000, guid: abd450136a584924cb2fd7a60a347007, type: 3}
+  - {fileID: 21300000, guid: a10e6496c9fe6de47939a6460c07c14d, type: 3}
+  - {fileID: 21300000, guid: d399eaa8fb5f2134c9d063bbd6265b91, type: 3}
+  - {fileID: 21300000, guid: 306a686093178e449925fded6c971433, type: 3}
+  - {fileID: 21300000, guid: a82d6bfd20ab4274cac267c7232816fc, type: 3}
+  - {fileID: 21300000, guid: 33b0b1a83ceea584a85a4687be3a9e83, type: 3}
+  - {fileID: 21300000, guid: 6cea1cf91e063e74eb3dc8404f704529, type: 3}
+  _walletConnectionPanel: {fileID: 0}
+  _walletConnectButton: {fileID: 0}
+  _walletConnectedButton: {fileID: 0}
+  _walletItemParents: {fileID: 0}
+  _walletItemPrefab: {fileID: 565371050435208806, guid: 04423d3f16be4c542a48330c9b8120d5, type: 3}
+  _walletSelectionPanel: {fileID: 0}
+  _walletConnectQRPanel: {fileID: 0}
+  _walletQRCode: {fileID: 0}
+  document: {fileID: 6124972939124344393}
+  walletItem: {fileID: 9197481963319205126, guid: 02754049dfaf3f547892804f4967d87c, type: 3}
+  tonConnectHandler: {fileID: 0}

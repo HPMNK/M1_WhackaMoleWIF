@@ -21,3 +21,7 @@ MonoBehaviour:
     levelName: City
     gameSkin: {fileID: 21300000, guid: e078dd3701748e04f94bfae7b5460c06, type: 3}
     holeSkin: {fileID: -1075531850, guid: e81535b016d8af74f9076f7647e10d63, type: 3}
+  - illustration: {fileID: 21300000, guid: 6cb6fdcdf7f2a93488b4b5d200f4ce19, type: 3}
+    levelName: Beach
+    gameSkin: {fileID: 21300000, guid: 06cbfa732f525b54b81b36ddb995b60a, type: 3}
+    holeSkin: {fileID: 1528301866, guid: e81535b016d8af74f9076f7647e10d63, type: 3}
