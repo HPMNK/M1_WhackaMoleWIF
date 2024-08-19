@@ -1813,10 +1813,8 @@ MonoBehaviour:
   initialMoleLifetime: 1.2
   initialSpawnIntervalMin: 0.5
   initialSpawnIntervalMax: 1
-  minMoleLifetime: 0.2
   minMoleLifetime: 0.15
   minSpawnInterval: 0.2
-  maxAnimationSpeed: 2.2
   maxAnimationSpeed: 2.4
   baseScore: 30
   maxScorePerMole: 5000
@@ -1824,7 +1822,6 @@ MonoBehaviour:
   heartPrefab: {fileID: 7950821974219357160, guid: 9e5769365a5ee2b40a681ed2ea25f1c8, type: 3}
   uiCanvas: {fileID: 522429226}
   badMoleChance: 10
-  lifeMoleChance: 5
   lifeMoleChance: 3
   normalMoleController: {fileID: 9100000, guid: f1848f05bffb9c042a76c6ab00aab9d2, type: 2}
   badMoleController: {fileID: 9100000, guid: 743809fbc7063ac46879d43f3a8b787a, type: 2}
@@ -1839,9 +1836,6 @@ MonoBehaviour:
   bonusMidMultiplier: 5
   bonusHighMultiplier: 10
   chanceToSpawnBonusMole: 5
-  bonusMoleLowChance: 80
-  bonusMoleMidChance: 15
-  bonusMoleHighChance: 5
   bonusMoleLowChance: 50
   bonusMoleMidChance: 35
   bonusMoleHighChance: 15
