@@ -56,8 +56,7 @@ public class GameManager : MonoBehaviour
 	bool isPaused = false;
 
 	private AudioSource sceneMusicAudioSource; // AudioSource pour la musique de la scène
-	public Image filter;
-	public float maxFilterAlpha = 0.5f; // Alpha maximum pour le filtre (éviter que l'écran devienne tout rouge)
+
 
 
 	void Awake()
@@ -133,12 +132,6 @@ public class GameManager : MonoBehaviour
 		{
 			scoreText = scoreTextObject.GetComponent<TextMeshProUGUI>();
 			scoreText.text = "0";
-		}
-
-		GameObject filterObject = GameObject.Find("Filter");
-		if (filterObject != null)
-		{
-			filter = filterObject.GetComponent<Image>();
 		}
 
 		StartCoroutine(SpawnMoles());
@@ -387,14 +380,6 @@ public class GameManager : MonoBehaviour
 			{
 				mole.GetComponent<Animator>().speed = Mathf.Min(1 + molesHit * 0.005f, maxAnimationSpeed);
 			}
-		}
-
-		float filterIntensity = Mathf.Clamp01(molesHit / 200f); // Le filtre s'intensifie progressivement avec le score
-		if (filter != null)
-		{
-			Color currentColor = filter.color;
-			currentColor.a = filterIntensity * maxFilterAlpha; // Ajuster l'opacité en fonction de la difficulté avec un maximum défini
-			filter.color = currentColor;
 		}
 	}
 
