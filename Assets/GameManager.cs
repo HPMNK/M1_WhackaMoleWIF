@@ -4,7 +4,9 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.Rendering.PostProcessing;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -56,7 +58,8 @@ public class GameManager : MonoBehaviour
 	bool isPaused = false;
 
 	private AudioSource sceneMusicAudioSource; // AudioSource pour la musique de la scène
-
+	public PostProcessVolume postProcessVolume; // Référence au volume de post-traitement
+	public float maxWeight = 1.0f; // Weight maximal pour le PostProcessVolume
 
 
 	void Awake()
@@ -97,7 +100,12 @@ public class GameManager : MonoBehaviour
 		sceneMusicAudioSource = sceneMusic.GetComponent<AudioSource>();
 		sceneMusicAudioSource.Play();
 
+		postProcessVolume = Camera.main.GetComponent<PostProcessVolume>();
 
+		if (postProcessVolume == null)
+		{
+			Debug.LogError("PostProcessVolume not found on the main camera!");
+		}
 
 	}
 
@@ -362,6 +370,16 @@ public class GameManager : MonoBehaviour
 	}
 	void AdjustDifficulty()
 	{
+		// Calculer une nouvelle valeur pour le weight basé sur la progression de la difficulté
+		float progress = (float)molesHit / 100f; // Ajustez cette valeur pour votre jeu
+		float newWeight = Mathf.Min(maxWeight, progress * maxWeight);
+
+		// Appliquer le nouveau weight au PostProcessVolume
+		if (postProcessVolume != null)
+		{
+			postProcessVolume.weight = newWeight;
+		}
+
 		// Réduire le temps entre les spawns
 		spawnIntervalMin = Mathf.Max(minSpawnInterval, initialSpawnIntervalMin - molesHit * 0.01f);
 		spawnIntervalMax = Mathf.Max(minSpawnInterval, initialSpawnIntervalMax - molesHit * 0.01f);
