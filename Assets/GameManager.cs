@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
 	private AudioSource sceneMusicAudioSource; // AudioSource pour la musique de la scène
 	public PostProcessVolume postProcessVolume; // Référence au volume de post-traitement
 	public float maxWeight = 1.0f; // Weight maximal pour le PostProcessVolume
+	private int postProcessHitCounter = 0; // Nouveau compteur pour suivre les moles hits après 10 000 points
 
 
 	void Awake()
@@ -371,14 +372,20 @@ public class GameManager : MonoBehaviour
 	void AdjustDifficulty()
 	{
 		// Calculer une nouvelle valeur pour le weight basé sur la progression de la difficulté
-		float progress = (float)molesHit / 100f; // Ajustez cette valeur pour votre jeu
-		float newWeight = Mathf.Min(maxWeight, progress * maxWeight);
-
-		// Appliquer le nouveau weight au PostProcessVolume
-		if (postProcessVolume != null)
+		if (score >= 8000)
 		{
-			postProcessVolume.weight = newWeight;
+			postProcessHitCounter++; // Incrémenter le compteur à chaque taupe frappée après 10 000 points
+
+			float progress = (float)postProcessHitCounter / 100f; // Ajuster la vitesse d'incrémentation du weight
+			float newWeight = Mathf.Min(maxWeight, progress * maxWeight);
+
+			// Appliquer le nouveau weight au PostProcessVolume
+			if (postProcessVolume != null)
+			{
+				postProcessVolume.weight = newWeight;
+			}
 		}
+
 
 		// Réduire le temps entre les spawns
 		spawnIntervalMin = Mathf.Max(minSpawnInterval, initialSpawnIntervalMin - molesHit * 0.01f);
