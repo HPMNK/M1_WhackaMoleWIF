@@ -1,0 +1,3132 @@
+fileFormatVersion: 2
+guid: 4602ae0c3ce2de148b9fd6a813cdb782
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4962b33ff527a4abcff16f8036e1ec
+      internalID: -387308835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0051b22cdfaf6f54e9730ab69b445a01
+      internalID: 746926114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c817afd86a582b43930e725f20ce390
+      internalID: -1397476083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f438c20cdd9e4a4ca8b210096fa040f
+      internalID: -1849697756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fb56f8e8eeadc46a1876c1a2c03d55
+      internalID: -1352083648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_5
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cc6ac273429404980be48dd920458e
+      internalID: -826603548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_6
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacb8b546da988243981a02c2f835598
+      internalID: 1903988857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_7
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2282036cfb8c55f489648c816e0826e8
+      internalID: -891169821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_8
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a970a89dcd3b9b04a9acd7deac7207e4
+      internalID: -1615410442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_9
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f4f8676d1a75f4dbcc57648bef3fbc
+      internalID: 683950432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_10
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1584
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eb2b981058e514bb2f3235e81deb57
+      internalID: 1741010199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f653663982f66e4c80feb2e1dc0baa5
+      internalID: -1079536636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16f8d573e3eedf46892f525af608821
+      internalID: -2019546562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae91cf52f6159be4ca9db678ff5ec643
+      internalID: -619206338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_14
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1360f50aa2eb5794d8810e8379297821
+      internalID: 290088505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_15
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f640af8900e614cad808e0cccf31bb
+      internalID: 1940117588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_16
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862481bdcb0ebb44d8f73d07026a6f80
+      internalID: 1081733493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_17
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4468bf0be45659d479d7d99d9b74bad5
+      internalID: 1431160088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_18
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5027c2d69a8bc146a8ff4b4a2831351
+      internalID: -1308352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_19
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bbadfa61a182a40a80dca94a3b041b
+      internalID: -156921631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_20
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535f6470361e62f439b91ec572624d03
+      internalID: 2143813314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_21
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bdd30c59ce8e84a8d5f91e3ed3249e
+      internalID: -1212290084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_22
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1440
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc39a99c83797142bcf53767e123774
+      internalID: 96939502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419274dd93578434e9330df1217fc071
+      internalID: -1621084727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_24
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5f2cfaf68a7634cbc4b0f25e9af777
+      internalID: 702628164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_25
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47696484ecf746c4ba8ffc241caea7df
+      internalID: 1922244020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_26
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8793907f115deeb4599bd5cb711fb17a
+      internalID: 1034544119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_27
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360e2389c15a2c64ea2a5c758b878d3a
+      internalID: -1061362939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_28
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c9c6e4f07a7d54fb8f260bad97e656
+      internalID: 770621260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_29
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4383a65865de1bd4ca2466eecdc2ecde
+      internalID: -1423705486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_30
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a31f59ab403a047949dc151dedfc52
+      internalID: -1031593558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_31
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7845997e065f65429be847051e8f553
+      internalID: 1184826899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_32
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1550c3c7f06eb4e88e248c49c4de72
+      internalID: -1038997127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_33
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50af596f6b3854d499e5515533f7183b
+      internalID: -1259011879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_34
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1296
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66b4e21950eb4441938489306584885
+      internalID: 489024515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91da7c062772d344aef8c18777811ad
+      internalID: -1028946249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_36
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60682e957a00a0a4fbd614fca3ff5fca
+      internalID: -906907432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_37
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9abfd9172fd134cbe533ed75b0bfc0
+      internalID: 1945340681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_38
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01dbc619ba485e498fe00ab474069a9
+      internalID: 504802571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_39
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c200a15136c00ff498abaeb9003db038
+      internalID: 1560448018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_40
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38f6d6112ca0654bbb6676b82e632df
+      internalID: -1128076559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_41
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5565011834340f449b9e28a9afb296cc
+      internalID: -1195830323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_42
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b39c6385bc2fcd4d801c41f77b5671f
+      internalID: 1862724366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_43
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad27860ef78673844b145dd02b2013d3
+      internalID: -338394197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_44
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795c28cdbd1313b4695554a7ef4c3a6d
+      internalID: 1256946832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_45
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f023b73098e40240a1e1e49e8ca1f28
+      internalID: 623163505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_46
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1152
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9bc814055726d419aeaccc10f56fb0
+      internalID: 1825218837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3844749c662fc15469a4aeb1d27266dd
+      internalID: -1601810638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_48
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c800f4209a3ce94ba62ac878566176a
+      internalID: 1209468303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_49
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54633c72dc7e0a34187bc61cf6dc6b16
+      internalID: 1876351702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_50
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43c336ff8c2eef46b3021b73bc0f5af
+      internalID: 1877107339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_51
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9597829968263f54b9ed2aebd263728d
+      internalID: -1996606559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_52
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe0f1f96694a6f43953f1bdf64fd2b4
+      internalID: 219880990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_53
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfa234c79551b046b6f9522165271be
+      internalID: -103944017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_54
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eb17800632e5b479c372be3d0d9dac
+      internalID: -833406986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_55
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4014ef881fcde2949bd2b2feb00c249c
+      internalID: 891788243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_56
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82d07a06e0ee0e4899a2485a73f0edb
+      internalID: 1411473938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_57
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9551f09a69a03354abe6f117ff870d9f
+      internalID: 165459350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_58
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1008
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cefe524a0d1a6438bee0ad5df670ca
+      internalID: -632404277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358135881e4d54140b619be04cebd434
+      internalID: -584801582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_60
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3543a5fdadb6f45b1e67ed7151655a
+      internalID: 1159113918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_61
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a493a4a505644bb45bc93bf7a4e98af9
+      internalID: 1522744985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_62
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3101c0cd3afaf7a4dbe9c50e374c0233
+      internalID: 614400982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_63
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6af18c153d815a439e597d3786f9b9a
+      internalID: -1375507517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_64
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061d823804eaf0f4e831463aa55e7b88
+      internalID: 247832716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_65
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d23587574619944a399ebd9b1d0b69
+      internalID: 1952321461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_66
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2c9edc74b58934d90fa0f9aa49e5e3
+      internalID: -1835964987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_67
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa47a887406b8945a2f5cc9fad4a27c
+      internalID: -1472994337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_68
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b902448baddbdde4c8fc4650b00c8d2a
+      internalID: 1395553762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_69
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0eff5b05a455404784f297150ef1568
+      internalID: 1433474704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_70
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 864
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a46e8d6db268843886fd1bfe2902f1
+      internalID: 345695788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ef920a4001d1b4cba11f29cb98febf
+      internalID: -534569943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_72
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1b8d56875f9104eb49b09784a9321e
+      internalID: -1443177236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_73
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1752281a1a1e6e4f936f4c861cc7d1b
+      internalID: 441924929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_74
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e5eb213ba6b0449950c63f20e73e92
+      internalID: -1297527188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_75
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9be45fe2e0b604595e8b14a69ffb0c
+      internalID: 1698382688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_76
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201e6f0a97d068f45b50a760c78fec36
+      internalID: -893673226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_77
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd90e523c7d8484d8193baef21f811a
+      internalID: 964442868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_78
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c50f2364bc89a4ebad1540351822b5
+      internalID: 1868256092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_79
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07cae8eecef6b94185809197d61d7dc
+      internalID: -1787889499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_80
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f75674b2958384883c0c30955f2358
+      internalID: -1597060371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_81
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78200bb525328724b92bb04d6323efc5
+      internalID: 766916512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_82
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 720
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3f11787f832f04796c1cf5c4f1ef7d
+      internalID: -203372271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f7c19e6c3da5c45b1802fe84e9ffd5
+      internalID: 1777117685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_84
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b14f259d519a4141a30d167b4809038
+      internalID: 1112061605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_85
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322c72591c58b024e8cf4668cd2e9d5e
+      internalID: -1447809636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_86
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4944bcc555c2d47bb8eaa2fba9e30b
+      internalID: -1795151449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_87
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7385fc224ac75f469fadcf745b0c548
+      internalID: -1784711922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_88
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d3de22e122e6d4b955efa976057e3e
+      internalID: -1872671416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_89
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf2b734f92b63f4fa8821c3ca468f04
+      internalID: -2079430418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_90
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35d87d6978d4e3449ada6c2a2d3e4b1
+      internalID: 1370078030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_91
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8593687c747014182761c371967754
+      internalID: -2002741450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_92
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8c73fd0096ae04aa7a440ee31077ea
+      internalID: -1203026367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_93
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320aab23320548c4ba7132c009327759
+      internalID: -337629789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_94
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 576
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12294fd1bbddf9e4b95f131941af5df8
+      internalID: 144390869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0217ee5ac2993f46b916b1803c6c42e
+      internalID: 921613399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_96
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8c423c68e4f5e44b8bedd3f8f0b8ff
+      internalID: 539551335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_97
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a36e4914d3300498a3865fe0d31d39
+      internalID: -40698136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_98
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4d19a59bb279d41a5d1d75ec02f6aa
+      internalID: 1018388540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_99
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be2d885f15cca64c99a4853139d789f
+      internalID: -1209099819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_100
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de48405d81e01d044b2a5540472d435a
+      internalID: 1479369633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_101
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de8afe82feed154e9ef97a4557e77e7
+      internalID: 1847090378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_102
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5abd741f1d7044dab646f3ebbab071
+      internalID: -920309793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_103
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14df5277ce107134883e18dcde157c43
+      internalID: 1672542732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_104
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67259a92c3245864fa0710cfeb133d2c
+      internalID: 1380573903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_105
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e54f7190428d3341bdcef520e0c25d4
+      internalID: -2081576328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_106
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 432
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa7f831a887796449f174e807682cdf
+      internalID: 192400957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ab9bfaf72ac86428cd2ff9f0e41642
+      internalID: 164134205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_108
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dab5a7b7506da4e9e9f9ee8e458e3e
+      internalID: -1838549450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_109
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f7a653cb0443a4bbda63ca067c7ee7
+      internalID: -1244835822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_110
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a900117d026974c4b87323783c3c3891
+      internalID: 2119319694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_111
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2ac2be72f4a4d4680d6d5200fa108d
+      internalID: -2044536322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_112
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c64481b2d3a15d45a6f9aaeba322fe9
+      internalID: 1935969837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_113
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d96e476a242644783d0c019762454f
+      internalID: 1335620772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_114
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bb2c3bb47b2d443a4bd11d51c06fe6
+      internalID: -1839125902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_115
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af3240788c9d5f47835997599d054c5
+      internalID: 1645716403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_116
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fd8f24726bf994390f553d5b3132c7
+      internalID: -1709449456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_117
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4987d632ede77ba4db4ca0d0bed3fe29
+      internalID: 1031240456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_118
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 288
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b8df96c5124734984cff0d25f8a244
+      internalID: -1717090766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9493a5621aeec7c46836377bc66221c5
+      internalID: -80449674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_120
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f76f1985dcfecf4da6f202800a770a0
+      internalID: 1622487499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_121
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044ca4bd367248649a3a6adeb8c53fc8
+      internalID: -1100599651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_122
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d257df5acc6ab4aa2b98e85ad53a1b
+      internalID: 714544040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_123
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dce548869c28a047a404fec6d53cd79
+      internalID: 1813454046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_124
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b0a8e3553d17249af7e4c5cad511ee
+      internalID: 1863898653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_125
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939ec6f65a15cf7439c37336e31fbf96
+      internalID: 1393345673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_126
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4367d307c07b5e94cb82a250d0479907
+      internalID: 119450025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_127
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d41ae105f6efa418eced13689d7a43
+      internalID: 1944899430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_128
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bed3138e370b6c44b80287e6ff40a9f
+      internalID: -1118737882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_129
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44bd231feecf874e9d6b67d1d6b95be
+      internalID: 1506005953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_130
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 144
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9f9c6cbb6c5c748acc740631414bf9
+      internalID: 546613034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_131
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ccd627eb6cf904ba2c466b4041411c
+      internalID: -1896389547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_132
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5a898588cce0a4e8dfe1d7838da9ec
+      internalID: -1016069517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_133
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb391cb378e252e4084440e40dacf58b
+      internalID: -1077723800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_134
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b550172806f3f646b93a7a1e32145c4
+      internalID: 452600680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIFMole_Sprite_Set4(Moo,Doge,Pepe)_135
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c738ce603f45dd418b66f5e57fa2f5a
+      internalID: 692594711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_0: -387308835
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_1: 746926114
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_10: 1741010199
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_100: 1479369633
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_101: 1847090378
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_102: -920309793
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_103: 1672542732
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_104: 1380573903
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_105: -2081576328
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_106: 192400957
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_107: 164134205
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_108: -1838549450
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_109: -1244835822
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_11: -1079536636
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_110: 2119319694
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_111: -2044536322
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_112: 1935969837
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_113: 1335620772
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_114: -1839125902
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_115: 1645716403
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_116: -1709449456
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_117: 1031240456
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_118: -1717090766
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_119: -80449674
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_12: -2019546562
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_120: 1622487499
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_121: -1100599651
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_122: 714544040
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_123: 1813454046
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_124: 1863898653
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_125: 1393345673
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_126: 119450025
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_127: 1944899430
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_128: -1118737882
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_129: 1506005953
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_13: -619206338
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_130: 546613034
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_131: -1896389547
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_132: -1016069517
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_133: -1077723800
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_134: 452600680
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_135: 692594711
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_14: 290088505
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_15: 1940117588
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_16: 1081733493
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_17: 1431160088
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_18: -1308352
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_19: -156921631
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_2: -1397476083
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_20: 2143813314
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_21: -1212290084
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_22: 96939502
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_23: -1621084727
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_24: 702628164
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_25: 1922244020
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_26: 1034544119
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_27: -1061362939
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_28: 770621260
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_29: -1423705486
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_3: -1849697756
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_30: -1031593558
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_31: 1184826899
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_32: -1038997127
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_33: -1259011879
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_34: 489024515
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_35: -1028946249
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_36: -906907432
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_37: 1945340681
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_38: 504802571
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_39: 1560448018
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_4: -1352083648
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_40: -1128076559
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_41: -1195830323
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_42: 1862724366
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_43: -338394197
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_44: 1256946832
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_45: 623163505
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_46: 1825218837
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_47: -1601810638
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_48: 1209468303
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_49: 1876351702
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_5: -826603548
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_50: 1877107339
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_51: -1996606559
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_52: 219880990
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_53: -103944017
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_54: -833406986
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_55: 891788243
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_56: 1411473938
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_57: 165459350
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_58: -632404277
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_59: -584801582
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_6: 1903988857
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_60: 1159113918
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_61: 1522744985
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_62: 614400982
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_63: -1375507517
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_64: 247832716
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_65: 1952321461
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_66: -1835964987
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_67: -1472994337
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_68: 1395553762
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_69: 1433474704
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_7: -891169821
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_70: 345695788
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_71: -534569943
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_72: -1443177236
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_73: 441924929
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_74: -1297527188
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_75: 1698382688
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_76: -893673226
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_77: 964442868
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_78: 1868256092
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_79: -1787889499
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_8: -1615410442
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_80: -1597060371
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_81: 766916512
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_82: -203372271
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_83: 1777117685
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_84: 1112061605
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_85: -1447809636
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_86: -1795151449
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_87: -1784711922
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_88: -1872671416
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_89: -2079430418
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_9: 683950432
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_90: 1370078030
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_91: -2002741450
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_92: -1203026367
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_93: -337629789
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_94: 144390869
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_95: 921613399
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_96: 539551335
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_97: -40698136
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_98: 1018388540
+      WIFMole_Sprite_Set4(Moo,Doge,Pepe)_99: -1209099819
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -202,7 +202,7 @@ public class GameManager : MonoBehaviour
 
 		if (tierChance < bonusMoleLowChance)
 		{
-			selectedMaterial = bonusLow;
+			selectedMaterial = mole.defaultMaterial; 
 			scoreMultiplier = bonusLowMultiplier;
 			controller = bonusMoleAnimator;
 			

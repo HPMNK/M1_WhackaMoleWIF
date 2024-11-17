@@ -194,7 +194,7 @@ PrefabInstance:
     - target: {fileID: 2221732031678868903, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 743809fbc7063ac46879d43f3a8b787a, type: 2}
+      objectReference: {fileID: 9100000, guid: 455e1e62514c2784497fb2823e63ef34, type: 2}
     - target: {fileID: 2259581579209305799, guid: 1924d4b2bd532254f98b830ec5f4b9c1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1895,21 +1895,21 @@ MonoBehaviour:
   lives: 3
   heartPrefab: {fileID: 7950821974219357160, guid: 9e5769365a5ee2b40a681ed2ea25f1c8, type: 3}
   uiCanvas: {fileID: 522429226}
-  badMoleChance: 10
+  badMoleChance: 15
   lifeMoleChance: 5
-  normalMoleController: {fileID: 9100000, guid: f1848f05bffb9c042a76c6ab00aab9d2, type: 2}
+  normalMoleController: {fileID: 9100000, guid: a6df4f2a3e3d3e649ae2ef1c8b712e32, type: 2}
   badMoleController: {fileID: 9100000, guid: 743809fbc7063ac46879d43f3a8b787a, type: 2}
-  lifeMoleController: {fileID: 9100000, guid: 6ce3df5eb3d69c24f88c36e5c3b3926b, type: 2}
-  fishController: {fileID: 9100000, guid: a3e16bb945247524f8d2fa6bec555736, type: 2}
-  durevController: {fileID: 9100000, guid: 99413a04a9f40534db41143329b69b82, type: 2}
-  bonusLow: {fileID: 2100000, guid: b538715d2f5598145ba8e16f64426c70, type: 2}
-  bonusMid: {fileID: 2100000, guid: 080bbdc497ada1740a7538e0a69dae8f, type: 2}
+  lifeMoleController: {fileID: 9100000, guid: e5b304a1c4750224fa51898dd05332b5, type: 2}
+  fishController: {fileID: 9100000, guid: 92345170f7c0b9c4b9a61114b101f237, type: 2}
+  durevController: {fileID: 9100000, guid: 455e1e62514c2784497fb2823e63ef34, type: 2}
+  bonusLow: {fileID: 2100000, guid: cb889a5a2fbc7564cbf5fcbd5eb24db5, type: 2}
+  bonusMid: {fileID: 2100000, guid: cb889a5a2fbc7564cbf5fcbd5eb24db5, type: 2}
   bonusHigh: {fileID: 2100000, guid: cb889a5a2fbc7564cbf5fcbd5eb24db5, type: 2}
-  bonusMoleAnimator: {fileID: 9100000, guid: bba3b062cf524144d82bbfadae0cd08f, type: 2}
+  bonusMoleAnimator: {fileID: 9100000, guid: e36891fe658fa8440ad7a3380e5ad17c, type: 2}
   bonusLowMultiplier: 3
   bonusMidMultiplier: 5
   bonusHighMultiplier: 10
-  chanceToSpawnBonusMole: 8
+  chanceToSpawnBonusMole: 10
   bonusMoleLowChance: 55
   bonusMoleMidChance: 30
   bonusMoleHighChance: 15

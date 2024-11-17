@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ShibaIdle
+  m_Name: WifIdle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -84,13 +84,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1816643603, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
+      value: {fileID: -1353568280, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
     - time: 0.083333336
-      value: {fileID: -1598633231, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
+      value: {fileID: -1246137373, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
     - time: 0.16666667
-      value: {fileID: -352988555, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
+      value: {fileID: -800150360, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
     - time: 0.25
-      value: {fileID: -1328010615, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
+      value: {fileID: 1968255114, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -140,10 +140,10 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1816643603, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
-    - {fileID: -1598633231, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
-    - {fileID: -352988555, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
-    - {fileID: -1328010615, guid: 07d1303c17d5db74f849e1da835d3412, type: 3}
+    - {fileID: -1353568280, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
+    - {fileID: -1246137373, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
+    - {fileID: -800150360, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
+    - {fileID: 1968255114, guid: 0d12ee48f812d0d469f3df1526bca2b6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
