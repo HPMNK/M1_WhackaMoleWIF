@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchoredPosition: {x: 0, y: -424}
   m_SizeDelta: {x: 143.434, y: 101.12854}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &52413496
@@ -860,8 +860,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 2751463423
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.6392157}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -878,8 +878,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 51.6
+  m_fontSizeBase: 51.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1071,8 +1071,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GAME OVER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 243d276a5237889458991d872ce5b93e, type: 2}
-  m_sharedMaterial: {fileID: 4699974651493522963, guid: 243d276a5237889458991d872ce5b93e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 942abefc4cc5906459c1e2f193bab1c3, type: 2}
+  m_sharedMaterial: {fileID: 4699974651493522963, guid: 942abefc4cc5906459c1e2f193bab1c3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -411.19025, y: -157.27246, z: -413.77032, w: 0}
+  m_margin: {x: -415.14813, y: -157.27246, z: -413.77032, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1392,11 +1392,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0, b: 1, a: 1}
+    m_NormalColor: {r: 0.003921569, g: 0.3254902, b: 0.76470596, a: 1}
+    m_HighlightedColor: {r: 0.003921569, g: 0.3254902, b: 0.76470596, a: 1}
     m_PressedColor: {r: 1, g: 0.6313726, b: 0.043137256, a: 1}
-    m_SelectedColor: {r: 1, g: 0, b: 1, a: 1}
-    m_DisabledColor: {r: 1, g: 0, b: 1, a: 1}
+    m_SelectedColor: {r: 0.003921569, g: 0.3254902, b: 0.76470596, a: 1}
+    m_DisabledColor: {r: 0.003921569, g: 0.3254902, b: 0.76470596, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1771,8 +1771,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278621891
-  m_fontColor: {r: 0.764151, g: 0.5864536, b: 0.025231415, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1789,8 +1789,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 93.8
-  m_fontSizeBase: 93.8
+  m_fontSize: 118.3
+  m_fontSizeBase: 118.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
